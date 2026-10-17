@@ -144,4 +144,5 @@ The graph is a reading of the published literature, not a measurement.
 
 ## Licence
 
-Code: MIT. Data files in `data/`: CC BY 4.0. See `LICENSE`.
+The code is under the MIT licence (`LICENSE`). The curated data files in
+`data/` are under CC BY 4.0 (`data/LICENSE.md`).
