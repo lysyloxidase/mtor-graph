@@ -1,0 +1,82 @@
+[
+ {
+  "key": "lysosomal_nutrient_sensing",
+  "order": 1,
+  "title": "Lysosomal nutrient sensing",
+  "title_pl": "Lizosomalny moduł wyczuwania składników odżywczych",
+  "group": "nutrient_sensing",
+  "summary": "Rag GTPases, Ragulator, v-ATPase, GATOR1/2, KICSTOR, FLCN–FNIP and the dedicated amino-acid sensors (Sestrin2, CASTOR1, SAMTOR, SLC38A9, LARS1, SAR1B) that recruit mTORC1 to the lysosome."
+ },
+ {
+  "key": "growth_factor_input",
+  "order": 2,
+  "title": "Growth-factor input (PI3K–AKT–TSC–Rheb)",
+  "title_pl": "Wejście czynników wzrostu (PI3K–AKT–TSC–Rheb)",
+  "group": "upstream_inputs",
+  "summary": "Receptor tyrosine kinases, IRS-1, PI3K, PTEN, PDK1, AKT, the TSC1–TSC2–TBC1D7 complex, Rheb, PRAS40, and the ERK/RSK, Wnt–GSK3 and IKKβ inputs converging on TSC."
+ },
+ {
+  "key": "energy_stress_input",
+  "order": 3,
+  "title": "Energy, oxygen and stress input (AMPK, REDD1, p53)",
+  "title_pl": "Wejście energetyczne, tlenowe i stresowe (AMPK, REDD1, p53)",
+  "group": "upstream_inputs",
+  "summary": "LKB1–AMPK, Raptor Ser792 and TSC2 phosphorylation, hypoxia–REDD1, DNA damage–p53–sestrins, metformin, exercise and caloric restriction."
+ },
+ {
+  "key": "core_complexes",
+  "order": 4,
+  "title": "Core complexes (mTORC1 and mTORC2 architecture)",
+  "title_pl": "Rdzeń: architektura kompleksów mTORC1 i mTORC2",
+  "group": "core_complexes",
+  "summary": "Subunits, domains, TOS/RAIP motif recognition, FRB occlusion, mSin1 autoinhibition and PIP3 relief, distal Akt docking, DEPTOR and PRAS40 brakes."
+ },
+ {
+  "key": "mtorc1_output_translation_ribosome",
+  "order": 5,
+  "title": "mTORC1 output: translation and ribosome biogenesis",
+  "title_pl": "Wyjście mTORC1: translacja i biogeneza rybosomów",
+  "group": "mtorc1_outputs",
+  "summary": "S6K1, 4E-BP1–eIF4E, LARP1/TOP mRNAs, TIF-IA/UBF (Pol I), MAF1 (Pol III)."
+ },
+ {
+  "key": "mtorc1_output_autophagy_metabolism_feedback",
+  "order": 6,
+  "title": "mTORC1 output: autophagy, metabolism and feedback",
+  "title_pl": "Wyjście mTORC1: autofagia, metabolizm i sprzężenia zwrotne",
+  "group": "mtorc1_outputs",
+  "summary": "ULK1/ATG13/TFEB, the integrated metabolic programme (HIF-1α, SREBP, Lipin1, CAD, ATF4–MTHFD2, c-Myc, PGC-1α) and the S6K1–IRS-1 / Grb10 brakes."
+ },
+ {
+  "key": "mtorc2_regulation_and_outputs",
+  "order": 7,
+  "title": "mTORC2 regulation and outputs",
+  "title_pl": "Regulacja i wyjścia mTORC2",
+  "group": "mtorc2",
+  "summary": "PIP3–mSin1, ribosome association, S6K1–Rictor feedback; AKT Ser473/Thr450, SGK1, PKC isoforms and their physiological outputs."
+ },
+ {
+  "key": "circadian",
+  "order": 8,
+  "title": "Circadian coupling",
+  "title_pl": "Sprzężenie z zegarem dobowym",
+  "group": "circadian",
+  "summary": "BMAL1 and PER2 restraint of mTORC1; S6K1 phosphorylation of BMAL1; SCN entrainment; rhythmic autophagy."
+ },
+ {
+  "key": "tissue_physiology_disease",
+  "order": 9,
+  "title": "Tissue physiology and disease",
+  "title_pl": "Fizjologia tkankowa i choroby",
+  "group": "tissue_disease",
+  "summary": "Tissue-specific outputs of each complex, gene lesions, mTORopathies, cancer lesion classes, neurodegeneration, immunity and ageing."
+ },
+ {
+  "key": "pharmacology",
+  "order": 10,
+  "title": "Pharmacology",
+  "title_pl": "Farmakologia",
+  "group": "pharmacology",
+  "summary": "Rapalogs, ATP-competitive, dual PI3K/mTOR and bi-steric inhibitors, their targets, selectivity, feedback consequences and adverse effects."
+ }
+]

@@ -1,0 +1,705 @@
+Rapamycin (sirolimus)
+├── ──┤ Amyloid-beta  (drug_inhibition; 3xTg-AD mouse; [71,381,573])
+│   └── ──▶ Alzheimer's disease  (physiological_output; Alzheimer's disease; [71,381,573])  ↺
+├── ──▶ autophagy  (drug_inhibition; CNS; neurodegeneration models; [49,379,488])
+│   ├── ──┤ Amyloid-beta  (degradation; neuron; [49,379,573])  ↺
+│   ├── ──▶ Amino acids (pool)  (metabolic_conversion; prolonged starvation; [686])
+│   │   ├── ──▶ mTORC1  (recruitment; amino-acid replete cells; [521,522])  ↺
+│   │   ├── ──▶ mTORC1  (sensing; prolonged starvation; [686])  ↺
+│   │   ├── ──◇ Folliculin (FLCN)  (recruitment; [331,468])
+│   │   │   └── ──■ FLCN-FNIP complex  (complex_formation; [610])
+│   │   └── ──◇ Lysosomal v-ATPase  (sensing; lysosomal lumen; [708])
+│   │       ├── ──▶ Ragulator (LAMTOR1-5)  (allosteric_activation; [27,708])
+│   │       ├── ──▶ Amino acids (pool)  (transport; [1,708])  ↺
+│   │       └── ──▶ Rag GTPase heterodimer (RagA/B-RagC/D)  (other; [708])
+│   ├── ──┤ Huntingtin (polyQ)  (degradation; neuron; [488])  ↺
+│   ├── ──▶ mTORC1  (other; prolonged starvation; autophagic lysosome reformation; [686])  ↺
+│   ├── ──┤ Beta-cell dedifferentiation and failure  (physiological_output; pancreatic beta-cell; [11,30])
+│   ├── ──┤ Neurodegeneration  (physiological_output; post-mitotic neuron; [215,316])
+│   ├── ──┤ alpha-Synuclein  (degradation; neuron; [382,645])  ↺
+│   └── ──» Amino acids (pool)  (metabolic_conversion; prolonged starvation; [686])  ↺
+├── ──▶ autophagy  (drug_activation; preclinical neurodegeneration models; [49,379,488])  ↺
+├── ──┤ Cap-dependent translation  (drug_inhibition; rapalog exposure; [40,70,166,603])
+│   ├── ──▶ Protein synthesis  (physiological_output; [572,604])  ↺
+│   └── ──▶ senescence-associated secretory phenotype  (translational_regulation; senescent cells; [232,322])  ↺
+├── ──┤ Alzheimer's disease  (drug_inhibition; 3xTg-AD mice; ERAP phase IIa under way in humans; [71,290,381,573,587])
+├── ──┤ Renal allograft rejection  (drug_inhibition; kidney transplantation; [73,373,422,539])
+├── ──┤ Cancer (advanced solid tumours)  (drug_inhibition; advanced solid tumours; mouse lifespan studies; [432,633])
+├── ──┤ Huntington's disease  (drug_inhibition; preclinical models only; [488])
+├── ──┤ Lymphangioleiomyomatosis  (drug_inhibition; approved indication; [404])
+├── ──▶ New-onset diabetes after transplantation  (drug_inhibition; continuous immunosuppressive exposure; [29,281,325])
+├── ──▶ New-onset diabetes after transplantation  (physiological_output; continuous immunosuppressive exposure; [29,281,325])  ↺
+├── ──┤ Parkinson's disease  (drug_inhibition; preclinical models only; [382,645])
+├── ──┤ PMSE syndrome  (drug_inhibition; PMSE syndrome; [450,480])
+├── ──▶ 4E-BP1  (Ser65, Thr70; drug_inhibition; [40,70,111,166,603])
+│   ├── ──┤ eIF4E  (sequestration; [19,40,109,193,209,453,463,572])
+│   │   ├── ──▶ 4E-BP1  (stabilisation; [667])  ↺
+│   │   ├── ──▶ PER1 (Period 1)  (translational_regulation; suprachiasmatic nucleus, light-induced; [82])  ↺
+│   │   ├── ──▶ PER2 (Period 2)  (translational_regulation; suprachiasmatic nucleus, light-induced; [82])
+│   │   │   ├── ──┤ CLOCK–BMAL1 heterodimer  (other; [320])  ↺
+│   │   │   ├── ──┤ mTORC1  (recruitment; time-of-day dependent; maximal repression at peak PER2; [662])  ↺
+│   │   │   ├── ──■ PER–CRY repressor complex  (complex_formation; [333])
+│   │   │   ├── ──◇ Raptor  (binding; [662])  ↺
+│   │   │   └── ──◇ TSC1 (hamartin)  (binding; mouse liver and cultured cells; [662])
+│   │   ├── ──▶ Cell proliferation  (physiological_output; [44,148,457,508,572])  ↺
+│   │   ├── ──■ eIF4F complex  (complex_formation; [572])  ↺
+│   │   └── ──▶ eIF4G1  (binding; [374,389,572])  ↺
+│   ├── ──┤ eIF4F complex  (competitive_inhibition; [374,389,572])
+│   │   ├── ──▶ Cyclin D1  (translational_regulation; [44,457,572])
+│   │   │   └── ──▶ Cell proliferation  (physiological_output; [558,559])  ↺
+│   │   ├── ──▶ HIF-1alpha  (translational_regulation; [44,145,457,572])  ↺
+│   │   ├── ──▶ Mcl-1  (translational_regulation; [44,414,457,572])
+│   │   ├── ──▶ c-Myc  (translational_regulation; [44,457,572])  ↺
+│   │   ├── ──▶ VEGF-A  (translational_regulation; [44,457,572])  ↺
+│   │   └── ──▶ Cap-dependent translation  (translational_regulation; [572])  ↺
+│   ├── ──┤ HIF-1alpha  (translational_regulation; [44,457,572])
+│   │   ├── ──▶ BNIP3  (transcriptional_regulation; hypoxia; [59])
+│   │   │   └── ──┤ Rheb  (binding; hypoxia; [347])  ↺
+│   │   ├── ──▶ REDD1 (DDIT4)  (transcriptional_regulation; hypoxia; [58,566])
+│   │   │   ├── ──▶ TSC2 (tuberin)  (other; hypoxia, energy and ER stress; [58,139,626])  ↺
+│   │   │   └── ──┤ 14-3-3  (binding; hypoxia; [139,626])
+│   │   ├── ──▶ hexokinase 2  (transcriptional_regulation; [154,397])
+│   │   │   ├── ──▶ glycolysis  (metabolic_conversion; [397])  ↺
+│   │   │   └── ──┤ Raptor  (binding; glucose deprivation; cardiomyocytes, cancer cells; [496])  ↺
+│   │   ├── ──▶ LDHA  (transcriptional_regulation; [154,621])
+│   │   │   └── ──▶ glycolysis  (metabolic_conversion; [154,621])  ↺
+│   │   ├── ──▶ PFKFB3  (transcriptional_regulation; [154,621])
+│   │   │   └── ──▶ glycolysis  (metabolic_conversion; [154,621])  ↺
+│   │   ├── ──▶ PKM2  (transcriptional_regulation; proliferating and tumour cells; [113,154])
+│   │   │   └── ──◇ glycolysis  (metabolic_conversion; proliferating cells; [113])  ↺
+│   │   ├── ──▶ GLUT1  (transcriptional_regulation; [154,621])
+│   │   │   └── ──▶ Glucose  (transport; [154,621])
+│   │   └── ──▶ VEGF-A  (transcriptional_regulation; tumour angiogenesis; [173])  ↺
+│   ├── ──┤ mitochondrial biogenesis  (translational_regulation; [421])
+│   ├── ──┤ c-Myc  (translational_regulation; [44,457,572])
+│   │   ├── ──▶ Brf1 (TFIIIB)  (binding; [196,458,647])
+│   │   │   └── ──▶ RNA polymerase III  (recruitment; [647])  ↺
+│   │   ├── ──▶ glutaminase  (other; proliferating and tumour cells; [185])
+│   │   │   ├── ──▶ glutamine anaplerosis  (metabolic_conversion; [653])  ↺
+│   │   │   └── ──▶ alpha-Ketoglutarate  (other; [153])
+│   │   └── ──▶ Ribosome biogenesis  (transcriptional_regulation; [458,619])  ↺
+│   ├── ──┤ Cell proliferation  (physiological_output; [148])
+│   ├── ──┤ Photic entrainment  (other; Eif4ebp1-null mice; [81])
+│   ├── ──┤ Mitochondrial transcription factor A  (translational_regulation; [420,421])
+│   │   └── ──▶ mitochondrial biogenesis  (other; [330])  ↺
+│   ├── ──┤ 5'TOP mRNAs  (translational_regulation; [470,604])
+│   │   └── ──▶ Ribosome  (translational_regulation; [255,341,401,458])  ↺
+│   ├── ──┤ VEGF-A  (translational_regulation; [44,145,457,572])
+│   └── ──┤ VIP (vasoactive intestinal peptide)  (translational_regulation; mouse SCN, Eif4ebp1-null; [81])
+│       ├── ──▶ Photic entrainment  (other; suprachiasmatic nucleus; [13,81])  ↺
+│       └── ──▶ Suprachiasmatic nucleus  (other; mouse SCN network; [13])
+├── ──┤ Grb10  (other; [248,687])
+│   ├── ──┤ IGF-1 receptor  (binding; [248,687])
+│   │   └── ──▶ IRS-1  (phosphorylation; [342])  ↺
+│   ├── ──┤ IGF-1 receptor  (binding; [248,687])  ↺
+│   ├── ──┤ Insulin receptor  (binding; [248,687])
+│   │   └── ──▶ IRS-1  (phosphorylation; [518,582])  ↺
+│   └── ──┤ Insulin receptor  (binding; [248,687])  ↺
+├── ──┤ Huntingtin (polyQ)  (drug_inhibition; Huntington's disease models; [488])
+│   └── ──▶ Huntington's disease  (physiological_output; Huntington's disease; [382,488,645])  ↺
+├── ──┤ Insulin secretion  (drug_inhibition; immunosuppressive exposures; [29])
+├── ──▶ IRS-1  (other; [222,500])
+│   ├── ──▶ Class I PI3K (p110α/p85)  (recruitment; insulin / IGF-1 stimulation; [17])
+│   │   ├── ──▶ mTORC2  (recruitment; growth-factor stimulation; [706])  ↺
+│   │   ├── ──▶ PI(3,4,5)P3  (metabolic_conversion; [72,77,260,386])
+│   │   │   ├── ──▶ AKT (PKB)  (membrane_targeting; [577])  ↺
+│   │   │   ├── ──▶ mSin1  (lipid_binding; growth-factor stimulation; [360])  ↺
+│   │   │   ├── ──▶ mSin1  (lipid_binding; [360])  ↺
+│   │   │   ├── ──▶ mSin1  (mSin1 PH domain; lipid_binding; growth-factor stimulation; [360])  ↺
+│   │   │   ├── ──▶ mTORC2  (membrane_targeting; [360])  ↺
+│   │   │   ├── ──▶ mTORC2  (membrane_targeting; growth-factor stimulation; [360])  ↺
+│   │   │   ├── ──▶ mSin1 PH domain  (lipid_binding; [360])
+│   │   │   ├── ──▶ AKT (PKB)  (AKT PH domain; lipid_binding; growth-factor stimulation; [273,577])  ↺
+│   │   │   └── ──▶ PDK1  (membrane_targeting; [124,343])  ↺
+│   │   └── ──▶ PI(3,4,5)P3  (metabolic_conversion; growth-factor stimulation; [72,260,386])  ↺
+│   └── ──▶ SREBP1  (other; liver, hyperinsulinaemic and Tsc1-null states; [301])
+│       ├── ──▶ Acetyl-CoA carboxylase 1  (transcriptional_regulation; [475])
+│       │   └── ──▶ de novo lipogenesis  (metabolic_conversion; [475])  ↺
+│       ├── ──▶ Fatty acid synthase  (transcriptional_regulation; [475])
+│       │   └── ──▶ de novo lipogenesis  (metabolic_conversion; [475])  ↺
+│       ├── ──▶ G6PD  (transcriptional_regulation; [154,475])
+│       │   ├── ──▶ NADPH  (metabolic_conversion; [154,475])  ↺
+│       │   └── ──▶ pentose phosphate pathway  (metabolic_conversion; [154,475])  ↺
+│       ├── ──▶ de novo lipogenesis  (transcriptional_regulation; proliferating cells and liver; [475,677])  ↺
+│       ├── ──▶ de novo lipogenesis  (transcriptional_regulation; liver; [210,326])  ↺
+│       ├── ──▶ de novo lipogenesis  (transcriptional_regulation; liver; [212,326])  ↺
+│       └── ──▶ Stearoyl-CoA desaturase 1  (transcriptional_regulation; [475])
+├── ──┤ Late-phase LTP (L-LTP)  (drug_inhibition; hippocampus; [119,593])
+│   └── ──▶ Long-term memory consolidation  (physiological_output; [250])
+├── ──┤ mTORC1  (drug_inhibition; acute exposure; [37,166,603])
+│   ├── ──▶ adipogenesis  (physiological_output; adipose tissue, mouse genetics; [474])
+│   ├── ──▶ adipogenesis  (physiological_output; adipose tissue; [474])  ↺
+│   ├── ──┤ AKT (PKB)  (other; acute pharmacological mTORC1 inhibition; [222,248,500,687])  ↺
+│   ├── ──┤ PRAS40  (Ser183, Ser212, Ser221; phosphorylation; [441,638])
+│   │   ├── ──┤ mTORC1  (Phe129 (TOS motif); competitive_inhibition; [520,620,637,672])  ↺
+│   │   ├── ──┤ mTORC1  (competitive_inhibition; growth-factor withdrawal; [637,672])  ↺
+│   │   ├── ──┤ Raptor  (competitive_inhibition; [520,532,620,637])
+│   │   │   ├── ──┤ ULK1  (binding; [242,286])  ↺
+│   │   │   ├── ──┤ ULK1  (binding; nutrient-rich conditions; [242,286,309])  ↺
+│   │   │   ├── ──▶ PRAS40  (binding; [437,520,532,620,637])  ↺
+│   │   │   ├── ──▶ 4E-BP1  (binding; [70,437,532,533])  ↺
+│   │   │   ├── ──▶ HIF-1alpha  (binding; [328,437,532])  ↺
+│   │   │   ├── ──▶ HIF-1alpha  (binding; [328,437,532])  ↺
+│   │   │   ├── ──▶ LARP1  (binding; [171,598])  ↺
+│   │   │   ├── ──▶ mTOR  (scaffolding; [14,305,362,670])  ↺
+│   │   │   ├── ──■ mTORC1  (complex_formation; [14,305,362,503])  ↺
+│   │   │   └── ──▶ S6K1 (p70 S6 kinase 1)  (binding; [437,532])  ↺
+│   │   └── ──■ mTORC1  (complex_formation; [503,520,620,637])  ↺
+│   ├── ──┤ AMBRA1  (Ser52; phosphorylation; [431])
+│   │   ├── ──▶ Class III PI3K complex I  (binding; [170])
+│   │   │   ├── ──▶ autophagy  (physiological_output; [253,511])  ↺
+│   │   │   └── ──▶ Phosphatidylinositol 3-phosphate (PI3P)  (metabolic_conversion; [253,511])
+│   │   └── ──▶ ULK1  (stabilisation; on mTORC1 inhibition; [431])  ↺
+│   ├── ──┤ AMPK (AMP-activated protein kinase)  (Ser345; phosphorylation; nutrient stress; proliferating cells; [353])
+│   │   ├── ──┤ CRY1 (Cryptochrome 1)  (Ser71; phosphorylation; mouse liver and fibroblasts; energy stress; [324])
+│   │   │   ├── ──┤ CLOCK–BMAL1 heterodimer  (binding; [320])  ↺
+│   │   │   └── ──■ PER–CRY repressor complex  (complex_formation; [333])  ↺
+│   │   ├── ──▶ Casein kinase 1ε (CSNK1E)  (Ser389; phosphorylation; [617])
+│   │   │   └── ──┤ PER2 (Period 2)  (phosphorylation; [617])  ↺
+│   │   ├── ──┤ mTORC1  (other; energy stress; [187,207,216,226,262])  ↺
+│   │   ├── ──▶ mTORC2  (phosphorylation; acute energetic stress (glucose deprivation, AICAR); [300])  ↺
+│   │   ├── ──┤ Raptor  (Ser722, Ser792; phosphorylation; energy stress; [187,207,216,226,262])  ↺
+│   │   ├── ──┤ Raptor  (Ser722, Ser792; phosphorylation; energy stress; [187,207,216,226,262])  ↺
+│   │   ├── ──▶ p53  (Ser15; phosphorylation; glucose deprivation; [282])
+│   │   │   ├── ──▶ REDD1 (DDIT4)  (transcriptional_regulation; DNA damage; [160])  ↺
+│   │   │   ├── ──▶ AMPK beta1 (scaffold subunit)  (transcriptional_regulation; DNA damage; [169])
+│   │   │   ├── ──▶ PTEN  (transcriptional_regulation; DNA damage; [168,574])
+│   │   │   ├── ──▶ Sestrin1  (transcriptional_regulation; DNA damage; [65,628])
+│   │   │   ├── ──▶ Sestrin2  (transcriptional_regulation; DNA damage; [64,65])  ↺
+│   │   │   └── ──▶ TSC2 (tuberin)  (transcriptional_regulation; DNA damage; mouse tissues and cell lines; [168,169])  ↺
+│   │   ├── ──▶ TSC2 (tuberin)  (Ser1387, Thr1271; phosphorylation; energy stress / glucose deprivation; [187,207,216,226,262])  ↺
+│   │   ├── ──▶ ULK1  (Ser317, Ser555, Ser777; phosphorylation; glucose starvation; [157,309])  ↺
+│   │   ├── ──▶ ULK1  (Ser317, Ser555, Ser777; phosphorylation; mouse ULK1 site numbering; energy-stress models; [157,309])  ↺
+│   │   └── ──▶ ULK1  (binding; energy stress / autophagy initiation; [157,309])  ↺
+│   ├── ──┤ ATF4  (degradation; glutamine metabolism and SIRT4 repression in proliferating cells; [122])
+│   │   ├── ──▶ REDD1 (DDIT4)  (transcriptional_regulation; ER stress, energy stress; [277,649])  ↺
+│   │   ├── ──▶ glutathione synthesis  (transcriptional_regulation; [605])
+│   │   ├── ──▶ MTHFD2  (transcriptional_regulation; [36,449,605])
+│   │   │   ├── ──▶ one-carbon/folate metabolism  (metabolic_conversion; [36])
+│   │   │   └── ──▶ de novo purine synthesis  (metabolic_conversion; [36])  ↺
+│   │   ├── ──▶ Sestrin2  (transcriptional_regulation; amino-acid starvation; ER stress; [63,676])
+│   │   │   ├── ──▶ AMPK (AMP-activated protein kinase)  (other; [65,337])  ↺
+│   │   │   ├── ──▶ AMPK (AMP-activated protein kinase)  (binding; DNA damage; genotoxic stress; [65])  ↺
+│   │   │   ├── ──┤ GATOR2  (sequestration; leucine deprivation; [94,530,581,655])
+│   │   │   ├── ──┤ RagA  (other; [337,460])
+│   │   │   └── ──┤ WDR24  (binding; [581,618])
+│   │   └── ──▶ SIRT4  (transcriptional_regulation; [122])  ↺
+│   ├── ──▶ ATF4  (translational_regulation; growth-factor and nutrient sufficiency; [36,449,605])  ↺
+│   ├── ──┤ ATG13  (phosphorylation; [242,253,479])
+│   │   └── ──■ ULK1  (complex_formation; [183,242,286])  ↺
+│   ├── ──┤ ATG14L  (Ser223, Ser3, Ser383, Ser440, Thr233; phosphorylation; nutrient sufficiency; [253,689])
+│   │   └── ──■ Class III PI3K complex I  (complex_formation; [253,511])  ↺
+│   ├── ──┤ autophagy  (physiological_output; [253,309,686])  ↺
+│   ├── ──▶ BMAL1 (ARNTL)  (stabilisation; neuronal Tsc1-knockout and Tsc2-heterozygous mice; [355])
+│   │   ├── ──▶ Cap-dependent translation  (translational_regulation; mouse liver; [354])  ↺
+│   │   ├── ──┤ mTORC1  (other; mouse tissues, whole-body Bmal1 deletion; [304])  ↺
+│   │   ├── ──■ CLOCK–BMAL1 heterodimer  (complex_formation; [190])
+│   │   │   ├── ──▶ CRY1 (Cryptochrome 1)  (transcriptional_regulation; [320])  ↺
+│   │   │   ├── ──▶ REDD1 (DDIT4)  (transcriptional_regulation; mouse peripheral tissues, circadian transcriptome atlas; [696])  ↺
+│   │   │   ├── ──▶ REV-ERBα (NR1D1)  (transcriptional_regulation; [478])
+│   │   │   ├── ──▶ PER1 (Period 1)  (transcriptional_regulation; [190])  ↺
+│   │   │   └── ──▶ PER2 (Period 2)  (transcriptional_regulation; [682])  ↺
+│   │   └── ──◇ eIF4E  (binding; mouse liver, cap-binding and polysome fractions; [354])  ↺
+│   ├── ──▶ Cap-dependent translation  (translational_regulation; [40,109,193,246,453,572,604])  ↺
+│   ├── ──▶ cholesterol synthesis  (physiological_output; [641])
+│   ├── ──┤ DEPTOR  (phosphorylation; growth-factor/nutrient sufficiency; [150,186,466])
+│   │   ├── ──┤ mTOR  (binding; [466])  ↺
+│   │   ├── ──┤ mTORC1  (binding; [466])  ↺
+│   │   ├── ──┤ mTORC2  (binding; [466])  ↺
+│   │   ├── ──■ mTORC1  (complex_formation; [466,503])  ↺
+│   │   └── ──■ mTORC2  (complex_formation; [360,466])  ↺
+│   ├── ──▶ Cancer (advanced solid tumours)  (physiological_output; human cancer; [244,274])  ↺
+│   ├── ──▶ Polycystic kidney disease  (physiological_output; renal tubular epithelium; [560])
+│   ├── ──┤ eEF2 kinase  (Ser78; phosphorylation; [57])
+│   │   └── ──┤ eEF2  (Thr56; phosphorylation; [490,513])
+│   │       └── ──▶ Protein synthesis  (physiological_output; [513,636])  ↺
+│   ├── ──▶ eIF3 complex  (recruitment; [236])
+│   │   └── ──▶ S6K1 (p70 S6 kinase 1)  (scaffolding; [236])  ↺
+│   ├── ──┤ 4E-BP1  (Thr37, Thr46; phosphorylation; [40,68,70,109,193,194,453])  ↺
+│   ├── ──┤ 4E-BP1  (Ser65, Thr70; phosphorylation; [40,70,109,193,194,453])  ↺
+│   ├── ──┤ 4E-BP2  (Ser65, Thr37, Thr46, Thr70; phosphorylation; [45,351,604])
+│   │   ├── ──┤ eIF4E  (sequestration; hippocampal neurons; [26,195])  ↺
+│   │   ├── ──┤ Autism-like behaviour  (translational_regulation; CNS neuron; [195])
+│   │   └── ──◇ Late-phase LTP (L-LTP)  (translational_regulation; forebrain neuron; [26])  ↺
+│   ├── ──▶ p300  (Ser2271, Ser2279, Ser2291, Ser2315; phosphorylation; [634])
+│   │   ├── ──┤ autophagy  (acetylation; [335])  ↺
+│   │   └── ──▶ de novo lipogenesis  (acetylation; [634])  ↺
+│   ├── ──▶ ER stress (unfolded protein response)  (physiological_output; pancreatic beta-cell; [11,30])
+│   │   └── ──▶ PERK (EIF2AK3)  (other; ER stress; [218])
+│   │       └── ──┤ eIF2alpha (EIF2S1)  (Ser51; phosphorylation; ER stress; [218])
+│   ├── ──▶ glutamine anaplerosis  (physiological_output; [122])
+│   ├── ──▶ Glutaminolysis  (physiological_output; effector T-cell activation; [134])
+│   ├── ──▶ glycolysis  (physiological_output; [154,328])
+│   ├── ──▶ Grb10  (Ser501, Ser503; phosphorylation; [248,687])  ↺
+│   ├── ──▶ Grb10  (Ser476, Ser501, Ser503; phosphorylation; [248,687])  ↺
+│   ├── ──▶ Grb10  (stabilisation; [248,687])  ↺
+│   ├── ──▶ HIF-1alpha  (translational_regulation; normoxia and hypoxia; [145,154,328])  ↺
+│   ├── ──▶ IL-1alpha  (translational_regulation; cellular senescence; [322])
+│   │   ├── ──▶ senescence-associated secretory phenotype  (physiological_output; cellular senescence; [322])  ↺
+│   │   └── ──▶ senescence-associated secretory phenotype  (physiological_output; senescent cells; [322])  ↺
+│   ├── ──▶ IL-1alpha  (translational_regulation; senescent cells; [322])  ↺
+│   ├── ──▶ Insulin secretion  (physiological_output; pancreatic beta-cell; early phase of hyperactivation; [11,30])  ↺
+│   ├── ──┤ IRS-1  (Ser636, Ser639; phosphorylation; [614])  ↺
+│   ├── ──┤ Ketogenesis  (physiological_output; liver; fasting; [212,326,542])
+│   ├── ──┤ LARP1  (phosphorylation; [171,238,276,604])
+│   │   ├── ──┤ eIF4E  (competitive_inhibition; mTORC1 inactive / nutrient withdrawal; [171,238,323,469,604])  ↺
+│   │   ├── ──┤ eIF4F complex  (competitive_inhibition; [171,238,323])  ↺
+│   │   ├── ──┤ Ribosome biogenesis  (other; [171,238,255,341,401,458])  ↺
+│   │   ├── ──┤ 5'TOP mRNAs  (binding; [171,238,323])  ↺
+│   │   ├── ──▶ 5'TOP mRNAs  (stabilisation; [9,191])  ↺
+│   │   └── ──◇ PABP  (binding; [171,598])
+│   │       └── ──▶ eIF4G1  (binding; [259,646])  ↺
+│   ├── ──▶ de novo lipogenesis  (physiological_output; growth-factor and nutrient sufficiency; in liver, contributes to steatosis under hyperinsulinaemic conditions; [467,475,677])
+│   ├── ──┤ Lipin1  (Ser106, Ser472; phosphorylation; [467])
+│   │   └── ──┤ SREBP1  (other; [467])  ↺
+│   ├── ──┤ lysosomal biogenesis  (physiological_output; [392,498,544])
+│   ├── ──┤ MAF1  (Ser60, Ser68, Ser75; phosphorylation; [297,409,410,565])
+│   │   ├── ──┤ Brf1 (TFIIIB)  (binding; [137,197,410,504])  ↺
+│   │   ├── ──┤ RNA polymerase I  (other; [279])
+│   │   │   └── ──▶ 47S pre-rRNA  (transcriptional_regulation; [255,401,647])
+│   │   └── ──┤ RNA polymerase III  (binding; [409,410,623,647])
+│   │       ├── ──▶ 5S rRNA  (transcriptional_regulation; [297,647])
+│   │       └── ──▶ tRNA  (transcriptional_regulation; [297,647])
+│   ├── ──▶ MK2  (translational_regulation; senescent cells; [232])
+│   │   ├── ──▶ senescence-associated secretory phenotype  (physiological_output; senescent cells; [232])  ↺
+│   │   ├── ──┤ ZFP36L1  (phosphorylation; cellular senescence; [232])
+│   │   │   └── ──┤ senescence-associated secretory phenotype  (other; cellular senescence; [232])  ↺
+│   │   └── ──◇ TSC2 (tuberin)  (Ser1210; phosphorylation; p38 stress signalling; [346])  ↺
+│   ├── ──▶ mitochondrial biogenesis  (physiological_output; [123,421])  ↺
+│   ├── ──▶ c-Myc  (translational_regulation; [44,457,572])  ↺
+│   ├── ──▶ pentose phosphate pathway  (physiological_output; [154,475])
+│   │   ├── ──▶ NADPH  (metabolic_conversion; [154,475])
+│   │   │   └── ──▶ de novo lipogenesis  (metabolic_conversion; [154,475])  ↺
+│   │   └── ──▶ Ribose-5-phosphate  (metabolic_conversion; [154,475])
+│   │       ├── ──▶ de novo purine synthesis  (metabolic_conversion; [154,475])  ↺
+│   │       └── ──▶ de novo pyrimidine synthesis  (metabolic_conversion; [154,475])  ↺
+│   ├── ──▶ PER1 (Period 1)  (translational_regulation; mouse SCN, light-induced phase shift; [79,80])
+│   ├── ──▶ Astrocyte proliferation  (physiological_output; microglia; [702])
+│   ├── ──▶ Beta-cell dedifferentiation and failure  (physiological_output; pancreatic beta-cell, chronic activation; [11,30])  ↺
+│   ├── ──▶ Beta-cell mass and maturation  (physiological_output; pancreatic beta-cell; [48,434])
+│   ├── ──▶ Physiological cardiac hypertrophy  (physiological_output; cardiomyocyte; [405,538])  ↺
+│   ├── ──▶ Circadian behavioural abnormality  (physiological_output; mouse mTORopathy model; [355])
+│   ├── ──┤ Circadian period length  (physiological_output; [484])  ↺
+│   ├── ──▶ Fat mass  (physiological_output; adipose tissue; [474])
+│   ├── ──┤ Food intake  (physiological_output; hypothalamic arcuate nucleus (rodent); [120])
+│   ├── ──▶ Hepatic steatosis  (physiological_output; liver, hyperinsulinaemia; [212,326,677])
+│   ├── ──▶ Peripheral insulin resistance  (physiological_output; adipose tissue in obesity; [377])  ↺
+│   ├── ──┤ Lifespan extension  (physiological_output; yeast, worm and fly; [289,298,476,629])  ↺
+│   ├── ──▶ Maladaptive cardiac remodelling  (physiological_output; cardiomyocyte; [405,538])
+│   ├── ──▶ Amoeboid phagocytic microglial phenotype  (physiological_output; microglia; [702])
+│   ├── ──┤ Muscular dystrophy (Raptor-null)  (physiological_output; skeletal muscle; Raptor conditional knockout; [38])
+│   ├── ──▶ Load-induced muscle hypertrophy  (physiological_output; skeletal muscle; [50])  ↺
+│   ├── ──┤ Dendritic spine density  (physiological_output; microglia; [702])
+│   ├── ──▶ PPARgamma  (transcriptional_regulation; adipose tissue; [377,474,691])
+│   │   └── ──▶ adipogenesis  (transcriptional_regulation; adipose tissue; [505])  ↺
+│   ├── ──▶ de novo purine synthesis  (physiological_output; [36,449,605])
+│   ├── ──▶ de novo pyrimidine synthesis  (physiological_output; [35,497])
+│   ├── ──▶ Ribosome biogenesis  (other; [255,341,401,458])  ↺
+│   ├── ──▶ S6K1 (p70 S6 kinase 1)  (Ser371; phosphorylation; [378,423,516,562])  ↺
+│   ├── ──▶ S6K1 (p70 S6 kinase 1)  (Thr389; phosphorylation; [68,378,481])  ↺
+│   ├── ──▶ S6K2 (p70 S6 kinase 2)  (Thr388; phosphorylation; [447,471])
+│   │   └── ──▶ Ribosomal protein S6  (Ser235, Ser236, Ser240, Ser244; phosphorylation; [459,561])  ↺
+│   ├── ──┤ Pacer  (Ser157; phosphorylation; [105])
+│   │   └── ──▶ autophagy  (other; [104])  ↺
+│   ├── ──▶ senescence-associated secretory phenotype  (physiological_output; cellular senescence, geroscience; [232,322])  ↺
+│   ├── ──┤ SIRT4  (transcriptional_regulation; [122])
+│   │   └── ──┤ glutamate dehydrogenase  (other; [122])
+│   │       ├── ──▶ glutamine anaplerosis  (metabolic_conversion; [653])  ↺
+│   │       └── ──▶ alpha-Ketoglutarate  (metabolic_conversion; [153])  ↺
+│   ├── ──▶ SREBP1  (transcriptional_regulation; insulin-stimulated hepatocytes and growing cells; [467,475,677])  ↺
+│   ├── ──▶ SREBP1  (transcriptional_regulation; liver; [212,326,677])  ↺
+│   ├── ──▶ SREBP2  (transcriptional_regulation; [475,641])
+│   │   ├── ──▶ cholesterol synthesis  (transcriptional_regulation; [641])  ↺
+│   │   └── ──▶ HMG-CoA reductase  (transcriptional_regulation; [641])
+│   │       └── ──▶ cholesterol synthesis  (metabolic_conversion; [641])  ↺
+│   ├── ──▶ STAT3  (Ser727; phosphorylation; cytokine (CNTF/IL-6) stimulation; [679])
+│   ├── ──┤ TFE3  (Ser321; phosphorylation; nutrient sufficiency; [392,394,498])
+│   │   └── ──▶ CLEAR gene network  (transcriptional_regulation; [394])
+│   │       ├── ──▶ autophagy  (physiological_output; [445,543])  ↺
+│   │       └── ──▶ lysosomal biogenesis  (physiological_output; [445,528])  ↺
+│   ├── ──┤ TFEB  (Ser142; phosphorylation; nutrient sufficiency; [544])
+│   │   ├── ──▶ CLEAR gene network  (transcriptional_regulation; [445,528,543])  ↺
+│   │   ├── ──▶ TRPML1  (transcriptional_regulation; [406])
+│   │   │   ├── ──▶ Ca2+ (cytosolic calcium)  (transport; starvation / lysosomal stress; [406])
+│   │   │   └── ──■ Lysosome  (complex_formation; [406])  ↺
+│   │   ├── ──▶ RagD  (transcriptional_regulation; renal and pancreatic tumours with MiT/TFE activation; [140])
+│   │   │   └── ──■ Rag GTPase heterodimer (RagA/B-RagC/D)  (complex_formation; [308,554])  ↺
+│   │   └── ──◇ Circadian clock (transcription–translation feedback loop)  (transcriptional_regulation; mouse liver; [451])  ↺
+│   ├── ──┤ TFEB  (Ser211; phosphorylation; nutrient sufficiency; [392,498,544])  ↺
+│   ├── ──┤ TFEB  (Ser122; phosphorylation; [627])  ↺
+│   ├── ──┤ ULK1  (Ser757; phosphorylation; nutrient sufficiency; mouse site numbering; [157,183,242,286,309])
+│   │   ├── ──┤ AMPK (AMP-activated protein kinase)  (phosphorylation; [367])  ↺
+│   │   ├── ──▶ ATG14L  (Ser29; phosphorylation; starvation; [448])  ↺
+│   │   ├── ──▶ ATG9A  (phosphorylation; demonstrated for Atg1–Atg9 in yeast; the mammalian ULK1–ATG9A equivalent is supported but less firmly established; [446])
+│   │   ├── ──▶ autophagy  (physiological_output; [253,309,511])  ↺
+│   │   ├── ──▶ Beclin-1  (Ser14; phosphorylation; [511])
+│   │   │   ├── ──■ Class III PI3K complex I  (complex_formation; [253,511])  ↺
+│   │   │   └── ──■ PI3KC3 complex II (VPS34–Beclin-1–UVRAG)  (complex_formation; [349])  ↺
+│   │   ├── ──┤ Raptor  (Ser792, Ser855, Ser859; phosphorylation; autophagy-inducing conditions; [152,287])  ↺
+│   │   ├── ──◇ ATG13  (phosphorylation; [183,283,286])  ↺
+│   │   └── ──◇ FIP200  (phosphorylation; [183,286])
+│   │       └── ──■ ULK1  (complex_formation; [183,242,286])  ↺
+│   ├── ──┤ ULK1  (Ser637; phosphorylation; mouse site numbering; human experiments in Shang 2011; [550])  ↺
+│   ├── ──┤ UVRAG  (Ser498; phosphorylation; [312])
+│   │   └── ──■ PI3KC3 complex II (VPS34–Beclin-1–UVRAG)  (complex_formation; [265,349])
+│   │       └── ──▶ autophagy  (physiological_output; [349])  ↺
+│   ├── ──┤ WIPI2  (Ser395; phosphorylation; [635])
+│   │   └── ──▶ ATG12–ATG5–ATG16L1 complex  (recruitment; [146])
+│   │       └── ──▶ autophagy  (physiological_output; [146])  ↺
+│   ├── ──▶ Autophagic lysosome reformation  (physiological_output; late phase of a completed autophagic cycle; [686])
+│   │   └── ──▶ Lysosome  (other; [686])  ↺
+│   ├── ──◇ eIF4G1  (Ser1108, Ser1148, Ser1192; phosphorylation; [486])
+│   │   ├── ──▶ eIF3 complex  (binding; [223,572])  ↺
+│   │   ├── ──■ eIF4F complex  (complex_formation; [572])  ↺
+│   │   └── ──▶ MNK1/2  (recruitment; [482])
+│   │       └── ──◇ eIF4E  (Ser209; phosphorylation; mTORC1-independent MAPK input; [180,615,644])  ↺
+│   ├── ──◇ glycolysis  (physiological_output; effector T-cell activation; [134])  ↺
+│   ├── ──▶ Late-phase LTP (L-LTP)  (translational_regulation; hippocampal neuron; [119,593])  ↺
+│   ├── ──▶ Lysosome  (physiological_output; prolonged starvation; [686])
+│   │   ├── ──▶ mTORC1  (scaffolding; [23,462,545,708])  ↺
+│   │   └── ──▶ Rheb  (membrane_targeting; [407,521,522])
+│   │       ├── ──▶ mTOR FAT domain  (allosteric_activation; [672])
+│   │       ├── ──┤ FKBP38 (FKBP8)  (binding; [20,639])
+│   │       ├── ──▶ mTOR  (binding; lysosomal surface; [364,672])  ↺
+│   │       ├── ──▶ mTORC1  (allosteric_activation; at the lysosomal surface; [364,672])  ↺
+│   │       ├── ──▶ mTORC1  (allosteric_activation; lysosomal surface; [364,672])  ↺
+│   │       ├── ──▶ mTORC1  (allosteric_activation; lysosomal surface; [672])  ↺
+│   │       ├── ──▶ Phospholipase D1  (binding; [583])
+│   │       ├── ──┤ RAF kinases  (binding; TSC-deficient cells; farnesylation-dependent; [258,299])
+│   │       └── ──▶ Th1 and Th17 differentiation  (physiological_output; T lymphocyte; [134])  ↺
+│   ├── ──▶ Myelination  (physiological_output; oligodendrocyte lineage (rodent); [39,332])
+│   ├── ──◇ Photic entrainment  (physiological_output; suprachiasmatic nucleus; [79,484])  ↺
+│   ├── ──◇ Proteinuria  (physiological_output; kidney podocyte; [208,264])  ↺
+│   ├── ──▶ Th1 and Th17 differentiation  (physiological_output; CD4 T lymphocyte; [133,134])
+│   ├── ──◇ Regulatory T cell expansion  (physiological_output; de novo Treg differentiation in vitro; not mature Treg expansion; [133,134,690])  ↺
+│   ├── ──▶ PPARgamma  (other; adipocyte differentiation; [307])  ↺
+│   ├── ──▶ senescence-associated secretory phenotype  (translational_regulation; senescent cells; [232,322])  ↺
+│   ├── ──▶ Adipose tissue  (physiological_output; adipose tissue; [474])
+│   ├── ──▶ Pancreatic β-cell  (physiological_output; pancreatic beta-cell; [48,434])
+│   ├── ──▶ CNS neuron  (physiological_output; CNS neuron; [119,593])
+│   ├── ──▶ Haematopoietic compartment  (physiological_output; bone marrow; [99])
+│   ├── ──▶ Cardiomyocyte  (physiological_output; cardiomyocyte; [405,538])
+│   ├── ──▶ Hypothalamic arcuate neuron  (physiological_output; hypothalamic arcuate nucleus, rodent; [120,419])
+│   ├── ──▶ Kidney podocyte  (physiological_output; podocyte; [208,264])
+│   ├── ──▶ Liver  (physiological_output; liver; [212,326,677])
+│   ├── ──◇ Microglia  (physiological_output; microglia; [702])
+│   ├── ──▶ Oligodendrocyte  (physiological_output; oligodendrocyte lineage; regional (spinal cord > corpus callosum); [39,332])
+│   ├── ──▶ Oral epithelium  (physiological_output; oral mucosa; [509])
+│   ├── ──▶ Skeletal muscle  (physiological_output; skeletal muscle; [38])
+│   ├── ──▶ T lymphocyte  (physiological_output; T lymphocyte activation; [134])
+│   └── ──▶ YY1  (binding; skeletal muscle and cultured cells; [123])
+│       ├── ──▶ mitochondrial biogenesis  (transcriptional_regulation; [123])  ↺
+│       └── ──▶ PGC-1alpha  (complex_formation; [123])
+│           ├── ──▶ mitochondrial biogenesis  (transcriptional_regulation; [123])  ↺
+│           └── ──▶ Nuclear respiratory factor 1  (binding; [659])
+├── ──┤ mTORC2  (drug_inhibition; chronic or continuous dosing; [527])
+│   ├── ──▶ Actin cytoskeleton  (physiological_output; [269,525])
+│   │   └── ──▶ Late-phase LTP (L-LTP)  (physiological_output; hippocampus; [250])  ↺
+│   ├── ──▶ AKT (PKB)  (Ser473; phosphorylation; [3,245,387,388,526,597])  ↺
+│   ├── ──▶ AKT (PKB)  (Ser473; phosphorylation; [3,245,387,388])  ↺
+│   ├── ──▶ AKT (PKB)  (Ser473; phosphorylation; [3,245])  ↺
+│   ├── ──┤ BAD  (via AKT Ser473; other; [387,388])
+│   │   └── ──┤ Cell survival signalling  (physiological_output; [387,388])  ↺
+│   ├── ──┤ p27 (CDKN1B)  (other; pancreatic beta-cell; [202])
+│   ├── ──┤ p27 (CDKN1B)  (physiological_output; pancreatic beta-cell; [202])  ↺
+│   ├── ──▶ Cell survival signalling  (physiological_output; [387,388])
+│   ├── ──┤ DEPTOR  (phosphorylation; [150,186,466])  ↺
+│   ├── ──┤ DEPTOR  (phosphorylation; [150,186,466])  ↺
+│   ├── ──┤ FOXO1  (via AKT Ser473; other; [204,387,388])
+│   │   ├── ──▶ Hepatic gluconeogenesis  (transcriptional_regulation; liver; [210])  ↺
+│   │   └── ──▶ Hepatic gluconeogenesis  (transcriptional_regulation; liver; [210])  ↺
+│   ├── ──┤ FOXO1  (physiological_output; pancreatic beta-cell; [202])  ↺
+│   ├── ──┤ FOXO3a  (via AKT Ser473; other; [204,387,388])
+│   ├── ──▶ Glucokinase  (transcriptional_regulation; liver; [210])
+│   │   └── ──▶ glycolysis  (metabolic_conversion; liver; [210])  ↺
+│   ├── ──┤ Hepatic gluconeogenesis  (physiological_output; liver; [210])
+│   ├── ──┤ Hepatic gluconeogenesis  (Ser473; physiological_output; liver; [210])  ↺
+│   ├── ──▶ Insulin-stimulated glucose uptake  (physiological_output; adipose tissue; [126,595])
+│   ├── ──▶ Insulin-stimulated glucose uptake  (physiological_output; adipose tissue; [126,595])  ↺
+│   ├── ──▶ glycolysis  (physiological_output; liver; [210])  ↺
+│   ├── ──▶ IGF-1 receptor  (receptor tyrosine residues; phosphorylation; [678])  ↺
+│   ├── ──▶ Insulin secretion  (physiological_output; pancreatic beta-cell; [29,202])  ↺
+│   ├── ──▶ de novo lipogenesis  (physiological_output; liver; [210])  ↺
+│   ├── ──▶ ChREBP  (transcriptional_regulation; adipose tissue; [595])
+│   │   └── ──▶ de novo lipogenesis  (transcriptional_regulation; adipose tissue; [595])  ↺
+│   ├── ──▶ ChREBP  (physiological_output; adipose tissue; [595])  ↺
+│   ├── ──┤ Age-associated memory impairment  (physiological_output; mouse and Drosophila; [280])
+│   ├── ──▶ Beta-cell mass and maturation  (physiological_output; pancreatic beta-cell; [202])  ↺
+│   ├── ──┤ Whole-body growth  (physiological_output; adipose tissue; [126])
+│   ├── ──┤ Whole-body growth  (physiological_output; adipose tissue; [126])  ↺
+│   ├── ──▶ Cardiomyocyte cytoprotection  (physiological_output; cardiomyocyte, myocardial ischaemia; [631])
+│   ├── ──┤ Glucose intolerance / insulin resistance  (genetic_loss_of_function; liver, adipose, systemic; [210,325])  ↺
+│   ├── ──┤ Glucose intolerance / insulin resistance  (physiological_output; liver; [210])  ↺
+│   ├── ──┤ Hyperglycaemia  (physiological_output; pancreatic beta-cell; [202])  ↺
+│   ├── ──┤ Hypotension  (genetic_loss_of_function; distal nephron; [329])
+│   ├── ──┤ Peripheral insulin resistance  (physiological_output; chronic/continuous exposure; [29,325])  ↺
+│   ├── ──┤ Peripheral insulin resistance  (physiological_output; peripheral tissues under chronic rapalog exposure; [29,325])  ↺
+│   ├── ──┤ Salt wasting and hypotension  (genetic_loss_of_function; kidney-specific Rictor deletion; [329])
+│   ├── ──┤ Salt wasting and hypotension  (physiological_output; distal nephron; [329])  ↺
+│   ├── ──▶ Dendritic spine density  (physiological_output; postnatal murine forebrain; [250])  ↺
+│   ├── ──▶ Dendritic spine density  (physiological_output; postnatal murine forebrain; [250])  ↺
+│   ├── ──▶ T-cell survival signalling  (physiological_output; T lymphocyte; [134])
+│   ├── ──▶ Protein kinase C (generic)  (TOR-interaction motif (isoform-dependent), turn motif; phosphorylation; newly synthesized, mTORC2-dependent PKC isoforms; [18,257,439,706])
+│   │   ├── ──▶ Actin cytoskeleton  (physiological_output; [257,433])  ↺
+│   │   ├── ──▶ Cell adhesion  (physiological_output; [257,433])
+│   │   ├── ──▶ Cell migration  (physiological_output; [257,433])
+│   │   ├── ──▶ Epithelial polarity  (physiological_output; epithelium; [257,433])
+│   │   ├── ──▶ Rac1  (other; [257,433])
+│   │   │   ├── ──▶ Actin cytoskeleton  (physiological_output; neurons; [250])  ↺
+│   │   │   ├── ──▶ Dendritic spine density  (physiological_output; postnatal murine forebrain; [250])  ↺
+│   │   │   └── ──▶ Late-phase LTP (L-LTP)  (physiological_output; hippocampus; [250])  ↺
+│   │   └── ──▶ RhoA  (other; [257,433])
+│   ├── ──▶ SGK1  (Ser422; phosphorylation; [188,329])
+│   │   ├── ──▶ Na+/K+-ATPase (α1)  (other; distal nephron; [329])
+│   │   │   └── ──▶ Distal nephron ion transport  (transport; distal nephron; [329])  ↺
+│   │   ├── ──▶ CLC-K chloride channels  (other; distal nephron; [329])
+│   │   │   └── ──▶ Distal nephron ion transport  (transport; distal nephron; [329])  ↺
+│   │   ├── ──┤ FOXO3a  (Ser315, Thr32; phosphorylation; [61])  ↺
+│   │   ├── ──▶ Distal nephron ion transport  (physiological_output; distal nephron; [329])
+│   │   │   └── ──┤ Hypotension  (physiological_output; distal nephron; [329])  ↺
+│   │   ├── ──▶ NDRG1  (Thr346, Thr356, Thr366; phosphorylation; [329,427])
+│   │   ├── ──┤ Nedd4-2  (phosphorylation; distal nephron; [132,329])
+│   │   │   └── ──┤ ENaC  (N-terminal cytoplasmic lysines of the ENaC subunits; ubiquitination; distal nephron; [296,575])  ↺
+│   │   ├── ──▶ ENaC  (other; distal nephron; [329])
+│   │   │   └── ──▶ Distal nephron ion transport  (transport; distal nephron; [329])  ↺
+│   │   └── ──┤ TSC2 (tuberin)  (Ser939; phosphorylation; reported in PI3K-inhibitor-resistant tumour cells; [90])  ↺
+│   ├── ──▶ SREBP1  (other; liver; [210])  ↺
+│   ├── ──▶ SREBP1  (physiological_output; liver; [210])  ↺
+│   ├── ──▶ Tiam1  (other; postnatal murine forebrain; [250])
+│   │   ├── ──▶ Rac1  (gef_activity; [250])  ↺
+│   │   └── ──▶ Rac1  (gef_activity; postnatal murine forebrain; [250])  ↺
+│   ├── ──▶ Tiam1  (physiological_output; postnatal murine forebrain; [250])  ↺
+│   ├── ──┤ Foxp3+ regulatory T cell differentiation  (physiological_output; CD4+ T lymphocyte; [33,133,134])
+│   ├── ──▶ AKT (PKB)  (Thr450; phosphorylation; [163,257,271,439,706])  ↺
+│   ├── ──▶ AKT (PKB)  (Thr450; phosphorylation; cotranslational, ribosome-associated; [163,257,439,706])  ↺
+│   ├── ──▶ AKT (PKB)  (Thr450; phosphorylation; cotranslational; [163,257,271])  ↺
+│   ├── ──◇ Lipolysis  (physiological_output; adipose tissue; [126,595])
+│   ├── ──▶ Late-phase LTP (L-LTP)  (physiological_output; postnatal murine forebrain; [250])  ↺
+│   ├── ──▶ Late-phase LTP (L-LTP)  (physiological_output; postnatal murine forebrain; [250])  ↺
+│   ├── ──◇ Mitochondria-associated ER membranes  (membrane_targeting; [41])
+│   ├── ──◇ mTOR  (Ser2481; phosphorylation; [571])
+│   │   ├── ──▶ TFIIIC  (binding; [297])
+│   │   │   └── ──▶ Brf1 (TFIIIB)  (recruitment; [297,536,647])  ↺
+│   │   ├── ──┤ Dilated cardiomyopathy  (physiological_output; cardiomyocyte; [538,692])
+│   │   ├── ──┤ Lifespan extension  (physiological_output; mouse genetic hypomorph; [661])  ↺
+│   │   ├── ──┤ Regulatory T cell expansion  (physiological_output; de novo Treg differentiation; mouse T cells; [133])  ↺
+│   │   ├── ──▶ Raptor  (Ser863; phosphorylation; insulin stimulation; [174,640])  ↺
+│   │   ├── ──▶ mTOR  (complex_formation; [14,531,589,663,672])  ↺
+│   │   ├── ──◇ mTOR  (Ser2481; phosphorylation; [465,571])  ↺
+│   │   ├── ──■ mTORC1  (complex_formation; [14,305,362,503,672])  ↺
+│   │   ├── ──■ mTORC2  (complex_formation; [102,269,525,531])  ↺
+│   │   ├── ──■ mTORC2  (complex_formation; [102,360,455,531])  ↺
+│   │   ├── ──■ mTORC3 (putative)  (complex_formation; cancer cell lines; [225])
+│   │   ├── ──■ mTORC3 (putative)  (complex_formation; cancer cell lines; [225])  ↺
+│   │   ├── ──▶ Oligodendrocyte differentiation  (physiological_output; oligodendrocyte lineage; rodent conditional knockouts; [39,332])
+│   │   ├── ──▶ Osteoblast differentiation  (physiological_output; bone; [101,495])
+│   │   ├── ──◇ Osteoclast differentiation  (physiological_output; bone; [101,495])
+│   │   ├── ──◇ RNA polymerase I  (other; [609])  ↺
+│   │   ├── ──◇ Suprachiasmatic nucleus  (physiological_output; mouse SCN; central and peripheral clocks; [79,484])  ↺
+│   │   ├── ──▶ Bone  (physiological_output; bone; [101,495])
+│   │   └── ──▶ T lymphocyte  (physiological_output; T lymphocyte; [133])  ↺
+│   ├── ──◇ CNS myelination  (physiological_output; rodent; regional - spinal cord affected more than corpus callosum; [39,332])
+│   ├── ──▶ Long-term memory consolidation  (physiological_output; rodent and Drosophila; [250,280])  ↺
+│   ├── ──◇ Regulatory T cell expansion  (physiological_output; de novo Treg differentiation in vitro; not mature Treg expansion; [134])  ↺
+│   ├── ──▶ Protein kinase C (generic)  (TOR-interaction motif (isoform-dependent), turn motif; phosphorylation; newly synthesized, mTORC2-dependent PKC isoforms; [18,257,433])  ↺
+│   ├── ──◇ Plasma membrane  (membrane_targeting; [360])
+│   ├── ──▶ PKCα  (Thr638 (turn motif); phosphorylation; [18,204,257])
+│   ├── ──▶ PKCβII  (Thr641 (turn motif); phosphorylation; [18,257,433])
+│   ├── ──▶ PKCδ  (phosphorylation; [182,257])
+│   ├── ──▶ PKCε  (phosphorylation; [257])
+│   ├── ──▶ PKCζ  (turn motif; phosphorylation; [257,348])
+│   │   └── ──▶ Epithelial polarity  (physiological_output; epithelium; [586])  ↺
+│   ├── ──▶ Th2 effector differentiation  (physiological_output; CD4+ T lymphocyte; [134])
+│   ├── ──▶ Adipose tissue  (physiological_output; adipose tissue; [126,595])  ↺
+│   ├── ──▶ Adipose tissue  (physiological_output; adipose tissue; [126,595])  ↺
+│   ├── ──▶ Pancreatic β-cell  (physiological_output; pancreatic β-cell; [202])  ↺
+│   ├── ──▶ CNS neuron  (physiological_output; CNS; [250,280])  ↺
+│   ├── ──▶ Cardiomyocyte  (physiological_output; cardiomyocyte; [631])  ↺
+│   ├── ──▶ Renal tubule (distal nephron)  (physiological_output; kidney; [329])
+│   ├── ──▶ Liver  (physiological_output; liver; [210,327])  ↺
+│   ├── ──▶ Liver  (physiological_output; liver; [210])  ↺
+│   ├── ──◇ Oligodendrocyte  (physiological_output; rodent; [39,332])  ↺
+│   ├── ──◇ Oligodendrocyte  (physiological_output; oligodendrocyte lineage (rodent); [39,332])  ↺
+│   ├── ──◇ Skeletal muscle  (physiological_output; skeletal muscle; [38])  ↺
+│   └── ──▶ T lymphocyte  (physiological_output; [133,134])  ↺
+├── ──┤ mTORC2  (drug_inhibition; chronic dosing; cell-type dependent; [527])  ↺
+├── ──┤ Brain amyloid-beta burden  (physiological_output; 3xTg-AD mice; benefit requires intact autophagy and early initiation; no controlled human efficacy data; [71,381,573])
+├── ──┤ Physiological cardiac hypertrophy  (drug_inhibition; cardiomyocyte; physiological and pressure-overload hypertrophy; [405,538])
+├── ──▶ CD8 memory T cell quantity and quality  (drug_inhibition; low dose, acute viral infection; reproduced in non-human primates; [10,485])
+├── ──▶ CD8 memory T cell quantity and quality  (physiological_output; low dose, during acute infection; [10,485])  ↺
+├── ──▶ Cellular circadian amplitude  (drug_inhibition; engineered U2OS reporter cells; not patient-derived cells; [361])
+├── ──▶ Cellular circadian amplitude  (physiological_output; engineered U2OS reporter cells; not patient-derived cells; [361])  ↺
+├── ──▶ Circadian period length  (drug_inhibition; [484])
+├── ──▶ Cytopenia  (drug_inhibition; clinical exposures; [444])
+├── ──▶ Cytopenia  (physiological_output; therapeutic exposures; [444])  ↺
+├── ──▶ Delayed sleep–wake phase disorder  (drug_inhibition; high dose; human patients; [361])
+├── ──▶ Delayed sleep–wake phase disorder  (physiological_output; high dose; [361])  ↺
+├── ──▶ Glucose intolerance / insulin resistance  (other; continuous high exposure in rodents; [325])
+├── ──▶ Hypercholesterolaemia  (physiological_output; mTORC2 and mTORC1; [568])
+├── ──▶ Hyperglycaemia  (drug_inhibition; continuous high exposure; [281,568])
+├── ──▶ Hyperglycaemia  (physiological_output; continuous therapeutic exposure; [29,325,568])  ↺
+├── ──┤ Hyperphagic obesity  (drug_inhibition; rodent; [419])
+├── ──┤ Hyperphagic obesity  (drug_inhibition; rodent models; unresolved in humans; [120,419])  ↺
+├── ──▶ Hypertriglyceridaemia and hypercholesterolaemia  (drug_inhibition; clinical, immunosuppressive and oncological exposures; [444,568])
+├── ──▶ Hypertriglyceridaemia and hypercholesterolaemia  (physiological_output; therapeutic exposures; [568])  ↺
+├── ──▶ Impaired wound healing  (physiological_output; perioperative; [444])
+├── ──▶ Infection  (physiological_output; immunosuppressive exposures; [444])
+├── ──▶ Peripheral insulin resistance  (physiological_output; chronic dosing; [325])
+├── ──▶ Lifespan extension  (drug_inhibition; Bmal1-/- mice; [304])
+├── ──▶ Lifespan extension  (drug_inhibition; genetically heterogeneous mice; [224,413,578])  ↺
+├── ──▶ Lifespan extension  (physiological_output; genetically heterogeneous mice, Interventions Testing Program; [224,413,578])  ↺
+├── ──┤ Load-induced muscle hypertrophy  (drug_inhibition; rodent overload models and human contraction studies; [50,149])
+├── ──▶ Non-infectious pneumonitis  (physiological_output; complex attribution unclear; [444,648])
+├── ──┤ Premature ageing phenotype  (drug_inhibition; Bmal1-null mice; [304])
+├── ──▶ Proteinuria  (drug_inhibition; patients on mTOR inhibitor therapy; [114])
+├── ──▶ Proteinuria  (physiological_output; therapeutic exposures; [114,208,264])  ↺
+├── ──┤ Misfolded protein aggregates  (physiological_output; cellular and animal models; [382,488,645])
+├── ──▶ Sarcopenia  (drug_inhibition; chronic dosing in older adults; [149,416])
+├── ──▶ Stomatitis / mucositis  (drug_inhibition; oncology and off-label use; [509])
+├── ──▶ Stomatitis / mucositis  (physiological_output; therapeutic oncology exposures; [444,509])  ↺
+├── ──▶ Regulatory T cell expansion  (drug_inhibition; clinical immunosuppression; [33])
+├── ──▶ Regulatory T cell expansion  (physiological_output; [33,133,134])  ↺
+├── ──┤ Protein synthesis  (drug_inhibition; human skeletal muscle; [144,149])
+│   └── ──▶ Cell growth (mass/size)  (physiological_output; [255,341,458])
+├── ──┤ Ribosome biogenesis  (drug_inhibition; [214,255,400,401,409,410,565])
+│   └── ──▶ Ribosome  (other; [255,458])
+│       ├── ──▶ mTORC2  (binding; [439,706])  ↺
+│       ├── ──▶ mTORC2  (binding; [439,706])  ↺
+│       └── ──▶ Protein synthesis  (other; [255,341])  ↺
+├── ──┤ S6K1 (p70 S6 kinase 1)  (Thr389; drug_inhibition; [111,166,603])
+│   ├── ──▶ BMAL1 (ARNTL)  (Ser42; phosphorylation; mouse liver; nutrient-responsive; [354])  ↺
+│   ├── ──▶ CAD  (Ser1859; phosphorylation; [35,497])
+│   │   └── ──▶ de novo pyrimidine synthesis  (metabolic_conversion; [35,497])  ↺
+│   ├── ──▶ Cell growth (mass/size)  (physiological_output; [148,561])  ↺
+│   ├── ──┤ DEPTOR  (phosphorylation; [701])  ↺
+│   ├── ──┤ eEF2 kinase  (Ser366; phosphorylation; [636])  ↺
+│   ├── ──▶ eIF4B  (Ser422; phosphorylation; [236,487,548])
+│   │   ├── ──▶ eIF3 complex  (binding; [236])  ↺
+│   │   ├── ──▶ eIF4A1  (binding; [548,572])
+│   │   │   └── ──■ eIF4F complex  (complex_formation; [572])  ↺
+│   │   └── ──▶ c-Myc  (translational_regulation; [549])  ↺
+│   ├── ──┤ IRS-1  (Ser1101, Ser307, Ser636, Ser639; phosphorylation; [222,547,608,616])  ↺
+│   ├── ──┤ IRS-1  (Ser1101, Ser307, Ser636, Ser639; phosphorylation; chronic insulin stimulation, obesity; [222,608,616])  ↺
+│   ├── ──┤ mSin1  (Thr398, Thr86; phosphorylation; [359])
+│   │   ├── ──┤ FRB domain of mTOR  (binding; [102,531])  ↺
+│   │   ├── ──┤ mTOR  (mSin1 PH domain; autoinhibition; basal, growth-factor-deprived state; [360])  ↺
+│   │   ├── ──▶ AKT (PKB)  (scaffolding; [74,483,597])  ↺
+│   │   ├── ──▶ AKT (PKB)  (binding; [597])  ↺
+│   │   ├── ──▶ AKT (PKB)  (mSin1 CRIM domain acidic loop; scaffolding; [74,597])  ↺
+│   │   ├── ──■ mTORC2  (complex_formation; [102,177,270,360,531,669])  ↺
+│   │   ├── ──■ mTORC2  (complex_formation; [270,360,531])  ↺
+│   │   ├── ──▶ Protein kinase C (generic)  (recruitment; [74,483])  ↺
+│   │   ├── ──▶ Protein kinase C (generic)  (mSin1 CRIM domain; scaffolding; [74,483])  ↺
+│   │   ├── ──▶ Rictor  (mSin1 N-terminal Rictor-binding segment; binding; [74,102,270,360,483,531])  ↺
+│   │   ├── ──▶ SGK1  (recruitment; [74,483])  ↺
+│   │   └── ──▶ SGK1  (mSin1 CRIM domain; scaffolding; [74,483])  ↺
+│   ├── ──┤ mSin1  (Thr398, Thr86; phosphorylation; reported in tumour cell lines; [359])  ↺
+│   ├── ──┤ PDCD4  (Ser67; phosphorylation; [147])
+│   │   ├── ──┤ eIF4A1  (competitive_inhibition; [147,572,668])  ↺
+│   │   ├── ──┤ eIF4G1  (competitive_inhibition; [147,363,572,668])  ↺
+│   │   └── ──┤ Cell proliferation  (physiological_output; [147,668])  ↺
+│   ├── ──▶ Peripheral insulin resistance  (physiological_output; adipose tissue; obesity; [377])  ↺
+│   ├── ──┤ Lifespan extension  (physiological_output; female mice; [541])  ↺
+│   ├── ──▶ Ribosome biogenesis  (transcriptional_regulation; [97,255,458])  ↺
+│   ├── ──┤ Rictor  (Thr1135; phosphorylation; [53,142,285,607])
+│   │   ├── ──┤ FRB domain of mTOR  (sequestration; [102,531])  ↺
+│   │   ├── ──┤ FRB domain of mTOR  (binding; [102,531])  ↺
+│   │   ├── ──┤ FRB domain of mTOR  (sequestration; assembled mTORC2; [102,531])  ↺
+│   │   ├── ──┤ Raptor  (competitive_inhibition; [102,525,531])  ↺
+│   │   ├── ──▶ AKT (PKB)  (binding; [597])  ↺
+│   │   ├── ──▶ AKT (PKB)  (N-terminal mooring (mSin1/Rictor); scaffolding; [597])  ↺
+│   │   ├── ──▶ mTOR  (scaffolding; [102,525,531,597,670])  ↺
+│   │   ├── ──■ mTORC2  (complex_formation; [102,269,525,531])  ↺
+│   │   └── ──■ mTORC2  (complex_formation; [269,455,525,531])  ↺
+│   ├── ──┤ Rictor  (Thr1135; phosphorylation; [53,142,285,607])  ↺
+│   ├── ──┤ Rictor  (Thr1135; phosphorylation; [53,142,285,607])  ↺
+│   ├── ──▶ Ribosomal protein S6  (Ser235, Ser236, Ser240, Ser244; phosphorylation; [408,512])
+│   │   ├── ──▶ Cell growth (mass/size)  (physiological_output; [512])  ↺
+│   │   └── ──■ Ribosome  (complex_formation; [408])  ↺
+│   ├── ──┤ S6K1 (p70 S6 kinase 1)  (autoinhibition; [378])  ↺
+│   ├── ──▶ SREBP1  (transcriptional_regulation; hepatocytes, insulin stimulation; [443])  ↺
+│   ├── ──▶ UBF  (other; [214])
+│   │   └── ──▶ RNA polymerase I  (recruitment; [214,401,647])  ↺
+│   ├── ──◇ mTOR  (Ser2448; phosphorylation; [106,237])  ↺
+│   ├── ──◇ CBP80 (NCBP1)  (phosphorylation; [370,651])
+│   ├── ──▶ PDK1  (Thr389; binding; [46,179,378,481])
+│   │   ├── ──▶ AKT (PKB)  (Thr308; phosphorylation; [3,4])  ↺
+│   │   ├── ──▶ AKT (PKB)  (Thr308; phosphorylation; [3])  ↺
+│   │   ├── ──▶ S6K1 (p70 S6 kinase 1)  (Thr229; phosphorylation; requires prior mTORC1 phosphorylation of S6K1 Thr389; [378,481])  ↺
+│   │   ├── ──▶ S6K1 (p70 S6 kinase 1)  (Thr229; phosphorylation; [378,481])  ↺
+│   │   └── ──▶ p90 RSK  (Ser227 (RSK2 NTKD activation loop); phosphorylation; [178])
+│   │       ├── ──┤ DEPTOR  (phosphorylation; RAS/ERK activation; [701])  ↺
+│   │       ├── ──┤ eEF2 kinase  (Ser366; phosphorylation; Ras-ERK input; [636])  ↺
+│   │       ├── ──▶ eIF4B  (Ser422; phosphorylation; Ras-ERK input; [548])  ↺
+│   │       ├── ──▶ Ribosomal protein S6  (Ser235, Ser236; phosphorylation; mTORC1-independent Ras-ERK input; [507])  ↺
+│   │       ├── ──▶ Raptor  (Ser719, Ser721, Ser722; phosphorylation; [87])  ↺
+│   │       ├── ──▶ Raptor  (Ser719, Ser721, Ser722; phosphorylation; [87])  ↺
+│   │       ├── ──▶ TIF-IA (RRN3)  (Ser649; phosphorylation; Ras-ERK input; [699])
+│   │       └── ──┤ TSC2 (tuberin)  (Ser1798; phosphorylation; [506])  ↺
+│   └── ──◇ SKAR (POLDIP3)  (Ser383, Ser385; phosphorylation; [369,493])
+│       ├── ──■ Exon junction complex  (complex_formation; [369])
+│       └── ──▶ S6K1 (p70 S6 kinase 1)  (recruitment; [369])  ↺
+├── ──┤ senescence-associated secretory phenotype  (drug_inhibition; senescent cells; [232,322])
+├── ──┤ alpha-Synuclein  (drug_inhibition; cellular and rodent models of Parkinson disease; [382,645])
+│   └── ──▶ Parkinson's disease  (physiological_output; Parkinson's disease; [382,645])  ↺
+├── ──◇ AKT (PKB)  (Ser473, Thr308; other; [222,500,527])
+│   ├── ──┤ PRAS40  (Thr246; phosphorylation; insulin / growth-factor stimulation; [317,520,620,637])  ↺
+│   ├── ──┤ PRAS40  (Thr246; phosphorylation; insulin/growth-factor stimulation; [520,620,637])  ↺
+│   ├── ──┤ AMPK (AMP-activated protein kinase)  (Ser487 (human AMPK alpha1; Ser485 in rat); phosphorylation; AMPK alpha1; growth-factor-stimulated cells; [228,240])  ↺
+│   ├── ──┤ BAD  (Ser99 (human; Ser136 in mouse numbering); phosphorylation; [129,387,388])  ↺
+│   ├── ──┤ BAD  (Ser99 (human; Ser136 in mouse); phosphorylation; AKT-dependent survival signalling; [387,388,643])  ↺
+│   ├── ──┤ FOXO1  (Ser256, Ser319, Thr24; phosphorylation; [387,388,492])  ↺
+│   ├── ──┤ FOXO1  (Ser256, Ser319, Thr24; phosphorylation; requires AKT Ser473; [387,388,492])  ↺
+│   ├── ──┤ FOXO1  (Ser256, Ser319, Thr24; phosphorylation; liver; [210,492])  ↺
+│   ├── ──┤ FOXO3a  (Ser253, Ser315, Thr32; phosphorylation; [60,387,388])  ↺
+│   ├── ──┤ FOXO3a  (Ser253, Ser315, Thr32; phosphorylation; requires AKT Ser473; [387,388])  ↺
+│   ├── ──┤ GSK3β  (Ser9; phosphorylation; [121,387,388])
+│   │   ├── ──┤ Rictor  (Ser1235; phosphorylation; ER stress; [100])  ↺
+│   │   └── ──▶ TSC2 (tuberin)  (Ser1337, Ser1341; phosphorylation; energy stress; Wnt signalling; [263])  ↺
+│   ├── ──┤ GSK3β  (Ser9; phosphorylation; retained without AKT Ser473; [387,388])  ↺
+│   ├── ──┤ GSK3β  (Ser9; phosphorylation; cancer; distal-network lesions; [121,375,624])  ↺
+│   ├── ──▶ mSin1  (Thr86; phosphorylation; [252,359,671])  ↺
+│   ├── ──▶ MDM2 (E3 ubiquitin ligase)  (Ser166, Ser186; phosphorylation; [402,704])
+│   │   └── ──▶ Cell survival signalling  (other; [402])  ↺
+│   ├── ──▶ MDM2 (E3 ubiquitin ligase)  (Ser166, Ser186; phosphorylation; [388])  ↺
+│   ├── ──▶ MDM2 (E3 ubiquitin ligase)  (Ser166, Ser186; phosphorylation; cancer; distal-network lesions; [402])  ↺
+│   ├── ──┤ Denervation muscle atrophy  (physiological_output; skeletal muscle; denervation; [50])
+│   ├── ──▶ Load-induced muscle hypertrophy  (physiological_output; skeletal muscle; [50])  ↺
+│   ├── ──┤ AS160 (TBC1D4)  (Thr642; phosphorylation; insulin stimulation; [523])
+│   │   └── ──┤ GLUT4  (other; [523])
+│   │       └── ──▶ Insulin-stimulated glucose uptake  (transport; adipose tissue, skeletal muscle; [62])  ↺
+│   ├── ──┤ TSC2 (tuberin)  (Ser1130, Ser1132, Ser939, Ser981, Thr1462; phosphorylation; growth-factor stimulation; [72,260,386])
+│   │   ├── ──┤ Rheb  (Asn1643 (TSC2 asparagine thumb); gap_activity; [261,390,600,673])  ↺
+│   │   └── ──■ TSC complex (TSC1–TSC2–TBC1D7)  (complex_formation; [143,673])  ↺
+│   ├── ──┤ TSC2 (tuberin)  (Ser939, Thr1462; phosphorylation; retained without AKT Ser473; [72,260,386])  ↺
+│   ├── ──┤ TSC complex (TSC1–TSC2–TBC1D7)  (membrane_targeting; insulin stimulation; [72,407])
+│   │   ├── ──▶ mTORC2  (binding; [249])  ↺
+│   │   └── ──┤ Rheb  (gap_activity; lysosomal surface; [143,261,407,600,673])  ↺
+│   └── ──◇ mTOR  (Ser2448; phosphorylation; [106,430,540])  ↺
+├── ──◇ Circadian clock (transcription–translation feedback loop)  (drug_inhibition; cultured cells and mice; [484])
+│   ├── ──◇ autophagy  (transcriptional_regulation; mouse liver; [371])  ↺
+│   ├── ──◇ Cap-dependent translation  (translational_regulation; liver; [284,354])  ↺
+│   ├── ──◇ C/EBPβ (CEBPB)  (transcriptional_regulation; liver; [371])
+│   │   └── ──▶ autophagy  (transcriptional_regulation; liver; [371])  ↺
+│   ├── ──◇ mTORC1  (other; liver and peripheral tissues; [612,662])  ↺
+│   ├── ──◇ S6K1 (p70 S6 kinase 1)  (Thr389; other; mouse liver, polysome and ribosome profiling; [284])  ↺
+│   └── ──◇ TFEB  (other; liver; [451])  ↺
+├── ──◇ 4E-BP1  (Thr37, Thr46; drug_inhibition; rapamycin-resistant sites; [40,70,193,603])  ↺
+├── ──▶ FKBP12  (binding; [24,37,229,230])
+│   └── ──■ FKBP12-rapamycin complex  (complex_formation; [24,37,56,107,108,229,230,514,515])  ↺
+├── ──▶ FKBP12  (binding; [24,37,108])  ↺
+├── ──■ FKBP12-rapamycin complex  (complex_formation; [24,37,229,230])
+│   ├── ──┤ FRB domain of mTOR  (binding; [24,56,107,108,514,515])
+│   │   ├── ──◇ mTOR kinase domain (PIKK)  (binding; [588,670])
+│   │   │   └── ──■ mTOR  (binding; [315,588,670])  ↺
+│   │   ├── ──■ mTOR  (binding; [98,315,588,670])  ↺
+│   │   └── ──■ mTOR  (other; [315,588,670])  ↺
+│   ├── ──┤ FRB domain of mTOR  (binding; [24,56,107,108,514,515])  ↺
+│   ├── ──┤ FRB domain of mTOR  (binding; [24,108])  ↺
+│   ├── ──┤ mTOR  (sequestration; prolonged exposure; [527])  ↺
+│   └── ──┤ mTORC1  (drug_inhibition; [24,37,108])  ↺
+├── ──■ FKBP12-rapamycin complex  (complex_formation; [24,108])  ↺
+├── ──◇ Glucose intolerance / insulin resistance  (drug_inhibition; weekly or intermittent low-dose regimens; [12,292])  ↺
+├── ──◇ Lean tissue mass  (drug_inhibition; 48-week weekly dosing in adults aged 50-85; [416])
+├── ──◇ Lean tissue mass  (physiological_output; women, 10 mg weekly compounded sirolimus, 48 weeks; secondary endpoint, exposure not confirmed by trough measurement; [221,416])  ↺
+└── ──◇ Sleep–wake disturbance  (drug_inhibition; Smith-Kingsmore syndrome; uncontrolled clinical observations; [361])

@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mtor-graph"
+version = "1.0.0"
+description = "Curated, machine-readable interaction graph of the mTOR signalling pathway (mTORC1 and mTORC2): data, queries, exports and figures"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "lysyloxidase" },
+]
+keywords = ["mTOR", "mTORC1", "mTORC2", "signalling", "pathway", "network", "networkx", "systems biology"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+  "networkx>=3.0",
+  "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+mtor-graph = "mtor_graph.cli:main"
+
+[tool.setuptools]
+packages = ["mtor_graph", "mtor_graph.data"]
+package-dir = { "mtor_graph.data" = "data" }
+
+[tool.setuptools.package-data]
+"mtor_graph.data" = ["nodes.json", "edges.json", "references.json", "modules.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

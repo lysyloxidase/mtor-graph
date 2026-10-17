@@ -1,0 +1,442 @@
+# MTORC2 — upstream, depth 3
+
+- **mTORC2**
+  - → AMPK (AMP-activated protein kinase) [acute energetic stress (glucose deprivation, AICAR)]
+    - → A-769662 [experimental/pharmacological activator]
+    - → ADP
+    - → AICAR (acadesine) [experimental activator]
+    - ⊣ AKT (PKB) (Ser487 (human AMPK alpha1; Ser485 in rat)) [AMPK alpha1; growth-factor-stimulated cells]
+      - ⊣ Capivasertib (ATP site) [AKT-pathway-altered HR+ breast cancer]
+      - ⊣ Capivasertib ↺
+      - ⊣ Capivasertib ↺
+      - ⊣ mTORC1 [acute pharmacological mTORC1 inhibition] ↺
+      - → mTORC2 (Ser473) ↺
+      - → mTORC2 (Ser473) ↺
+      - → mTORC2 (Ser473) ↺
+      - → PDK1 (Thr308)
+      - → PDK1 (Thr308) ↺
+      - ⊣ PHLPP1/2 (Ser473)
+      - → PI(3,4,5)P3 ↺
+      - ⊣ PP2A (B55α holoenzyme) (Thr308)
+      - → DNA-PKcs (Ser473) [DNA damage; growth-factor-independent]
+      - → AKT1 activating mutation (E17K) [breast, colorectal, ovarian cancer]
+      - → AKT1 activating mutation [somatic, solid tumours] ↺
+      - → mSin1 CRIM domain ↺
+      - → mSin1 ↺
+      - → mSin1 ↺
+      - → mSin1 (mSin1 CRIM domain acidic loop) ↺
+      - → mTORC2 (Thr450) ↺
+      - → mTORC2 (Thr450) [cotranslational, ribosome-associated] ↺
+      - → mTORC2 (Thr450) [cotranslational] ↺
+      - → PI(3,4,5)P3 (AKT PH domain) [growth-factor stimulation] ↺
+      - – Rapamycin (sirolimus) (Ser473, Thr308) ↺
+      - → Rictor ↺
+      - → Rictor (N-terminal mooring (mSin1/Rictor)) ↺
+      - – Sapanisertib (Ser473, Thr308) [class effect of ATP-competitive mTOR inhibitors] ↺
+    - → Aldolase A [glucose starvation]
+      - ⊣ Fructose-1,6-bisphosphate [glucose deprivation]
+    - → AMP
+      - → Energy stress (high AMP/ATP) ↺
+    - → ATM kinase [oxidative stress (H2O2)]
+      - → DNA damage (Ser1981)
+      - → Oxidative stress (ROS) (Cys2991) [oxidative stress] ↺
+    - ⊣ ATP
+      - → Mitochondrial complex I (NADH dehydrogenase) [biguanide exposure]
+    - → AXIN1 [lysosomal surface]
+      - → Ragulator (LAMTOR1-5) [glucose starvation]
+    - → Caloric restriction [liver, skeletal muscle; rodent CR regimens]
+    - → CaMKK2 (CaMKK-beta) (Thr172) [Ca2+-mobilising stimuli; LKB1-deficient cells]
+      - → Ca2+ (cytosolic calcium)
+    - → Energy stress (high AMP/ATP)
+      - → Exercise [skeletal muscle contraction] ↺
+    - → Exercise [skeletal muscle; endurance/contractile exercise]
+    - → Glucose deprivation [glucose starvation]
+    - → Hypoxia [hypoxia]
+    - → LKB1-STRADA-MO25 complex (Thr172)
+      - ⊣ STRADA biallelic loss of function [PMSE syndrome]
+      - – MO25-alpha (CAB39)
+      - – LKB1 (STK11) ↺
+      - – STRAD-alpha (STRADA)
+    - → Metformin [liver, skeletal muscle, tumour cells]
+    - ⊣ mTORC1 (Ser345) [nutrient stress; proliferating cells]
+      - ⊣ PRAS40 (Phe129 (TOS motif))
+      - ⊣ PRAS40 [growth-factor withdrawal] ↺
+      - → Amino acids (pool) [amino-acid replete cells]
+      - → Amino acids (pool) [prolonged starvation] ↺
+      - ⊣ AMPK (AMP-activated protein kinase) [energy stress] ↺
+      - → Androgen receptor [prostate cancer]
+      - → Arf1 [glutamine stimulation; Rag-independent]
+      - → autophagy [prolonged starvation; autophagic lysosome reformation]
+      - ⊣ BMAL1 (ARNTL) [mouse tissues, whole-body Bmal1 deletion]
+      - ⊣ Caloric restriction [mouse liver; time-of-day dependent] ↺
+      - → Cholesterol (lysosomal)
+      - ⊣ DEPTOR ↺
+      - → ERK1/2 [suprachiasmatic nucleus]
+      - ⊣ Everolimus ↺
+      - → Resistance exercise / mechanical overload [skeletal muscle]
+      - ⊣ FKBP12-rapamycin complex ↺
+      - ⊣ FKBP38 (FKBP8)
+      - ⊣ Glucose deprivation [AMPK-independent arm] ↺
+      - ⊣ Hypoxia [hypoxia] ↺
+      - → IKKβ [inflammatory signalling (TNF)]
+      - → Leptin [hypothalamic arcuate nucleus (rodent)]
+      - → Light (photic input) [mouse SCN, light pulse during subjective night]
+      - ⊣ Metformin ↺
+      - ⊣ nab-Sirolimus
+      - ⊣ PER2 (Period 2) [time-of-day dependent; maximal repression at peak PER2]
+      - → Phosphatidic acid (FRB domain (Arg2109)) [mechanical load / mitogens] ↺
+      - → Phosphatidic acid [skeletal muscle; mechanical loading] ↺
+      - → Rab1A [amino-acid stimulation]
+      - → Rag GTPase heterodimer (RagA/B-RagC/D)
+      - → Rag GTPase heterodimer (RagA/B-RagC/D) [lysosomal surface] ↺
+      - ⊣ RapaLink-1 [including FRB-mutant, rapalog-resistant cells] ↺
+      - ⊣ Rapamycin (sirolimus) [acute exposure] ↺
+      - → Resistance exercise / mechanical overload [skeletal muscle; resistance exercise]
+      - → Rheb [at the lysosomal surface] ↺
+      - → Rheb [lysosomal surface] ↺
+      - → Rheb [lysosomal surface] ↺
+      - ⊣ Ridaforolimus
+      - ⊣ RMC-5552 ↺
+      - ⊣ Sapanisertib ↺
+      - ⊣ SAR1B [leucine deprivation]
+      - → SLC38A9
+      - ⊣ Sleep deprivation [hippocampus]
+      - ⊣ Temsirolimus ↺
+      - ⊣ Torin1 [tool compound] ↺
+      - → Bmal1 loss of function (Bmal1-null) [Bmal1-/- mice]
+      - → MTOR gain-of-function (somatic mosaic) ↺
+      - → PER2 loss of function (Per2-null)
+      - → STK11 (LKB1) loss-of-function [STK11-mutant tumours; Peutz-Jeghers syndrome] ↺
+      - → STRADA biallelic loss of function [PMSE syndrome; cortical neurons] ↺
+      - → TSC1 loss-of-function ↺
+      - ⊣ Vistusertib ↺
+      - – Ageing [aged skeletal muscle]
+      - – PRAS40 ↺
+      - – Circadian clock (transcription–translation feedback loop) [liver and peripheral tissues]
+      - – DEPTOR ↺
+      - → Lysosome
+      - – mLST8 (GbetaL) ↺
+      - – mTOR ↺
+      - → Ragulator (LAMTOR1-5) ↺
+      - – Raptor ↺
+      - → RUVBL1 (Pontin) [energy-replete vs energy-stressed cells] ↺
+      - → TTT complex (Tel2-Tti1-Tti2) ↺
+    - → Oxidative stress (ROS) [oxidative stress]
+    - ⊣ PP2Cα (PPM1A) (Thr172)
+    - → Sestrin1 [DNA damage]
+      - ⊣ Leucine (C-terminal leucine-binding pocket)
+      - → p53 [DNA damage]
+    - → Sestrin2
+      - → ATF4 [amino-acid starvation; ER stress]
+      - ⊣ Leucine (C-terminal leucine-binding pocket) ↺
+      - → p53 [DNA damage] ↺
+    - → Sestrin2 [DNA damage; genotoxic stress] ↺
+    - → LKB1 (STK11) (Thr172)
+      - → AXIN1 [energy stress; liver] ↺
+      - → MO25-alpha (CAB39) ↺
+      - → STRAD-alpha (STRADA) ↺
+      - ⊣ STK11 (LKB1) loss-of-function [Peutz-Jeghers syndrome; lung adenocarcinoma] ↺
+      - ⊣ STRADA biallelic loss of function [autosomal recessive] ↺
+      - – ATM kinase (Thr366) [DNA damage; oxidative stress] ↺
+    - ⊣ ULK1
+      - → AMBRA1 [on mTORC1 inhibition]
+      - → AMPK (AMP-activated protein kinase) (Ser317, Ser555, Ser777) [glucose starvation] ↺
+      - → AMPK (AMP-activated protein kinase) (Ser317, Ser555, Ser777) [mouse ULK1 site numbering; energy-stress models] ↺
+      - ⊣ mTORC1 (Ser757) [nutrient sufficiency; mouse site numbering] ↺
+      - ⊣ mTORC1 (Ser637) [mouse site numbering; human experiments in Shang 2011] ↺
+      - ⊣ Raptor ↺
+      - ⊣ Raptor [nutrient-rich conditions] ↺
+      - → AMPK (AMP-activated protein kinase) [energy stress / autophagy initiation] ↺
+      - – ATG101
+      - – ATG13
+      - – FIP200
+    - ⊣ STK11 (LKB1) loss-of-function [somatic or germline]
+    - – FNIP1
+    - – AMPK beta1 (scaffold subunit)
+      - ⊣ Glycogen [muscle and liver glycogen stores]
+      - → p53 [DNA damage] ↺
+    - – AMPK gamma1 (nucleotide-sensing subunit)
+  - ⊣ XPLN (ARHGEF3)
+  - ⊣ AZD8055
+  - ⊣ DEPTOR
+    - ⊣ betaTrCP
+    - ⊣ betaTrCP ↺
+    - ⊣ CK1alpha
+    - ⊣ mTORC1 [growth-factor/nutrient sufficiency] ↺
+    - ⊣ mTORC2 ↺
+    - ⊣ mTORC2 ↺
+    - ⊣ S6K1 (p70 S6 kinase 1)
+      - ⊣ Everolimus (Thr389) ↺
+      - → Leucine (Thr389) [human skeletal muscle, oral leucine bolus at rest] ↺
+      - → mTORC1 (Ser371) ↺
+      - → mTORC1 (Thr389) ↺
+      - → PDK1 (Thr229) [requires prior mTORC1 phosphorylation of S6K1 Thr389] ↺
+      - → PDK1 (Thr229) ↺
+      - ⊣ PP2A (Thr389)
+      - ⊣ Rapamycin (sirolimus) (Thr389) ↺
+      - ⊣ RMC-5552 (Thr389) ↺
+      - ⊣ S6K1 (p70 S6 kinase 1) ↺
+      - ⊣ Sapanisertib (Thr389) ↺
+      - ⊣ Torin1 (Thr389) ↺
+      - → Bmal1 loss of function (Bmal1-null) (Thr389) [Bmal1-null mice, multiple tissues] ↺
+      - – Circadian clock (transcription–translation feedback loop) (Thr389) [mouse liver, polysome and ribosome profiling] ↺
+      - → eIF3 complex
+      - → Raptor ↺
+      - → SKAR (POLDIP3)
+      - – TOS motif (TOR signalling motif)
+    - ⊣ p90 RSK [RAS/ERK activation]
+      - → ERK1/2 (Ser363, Thr359, Thr573 (CTKD)) ↺
+      - → PDK1 (Ser227 (RSK2 NTKD activation loop)) ↺
+    - ⊣ SCF(beta-TrCP) E3 ubiquitin ligase (Ser286, Ser287, Ser291)
+      - – betaTrCP ↺
+      - – Cullin-1
+      - – beta-TrCP2 (FBXW11)
+      - – SKP1
+  - ⊣ Everolimus [chronic or prolonged exposure only; preassembled mTORC2 spared acutely]
+    - ⊣ ABCB1 (P-glycoprotein) [blood-brain barrier]
+    - ⊣ ABCB1 (P-glycoprotein) [blood-brain barrier] ↺
+    - ⊣ CYP3A4
+    - – DEPDC5 loss-of-function [genotype-directed therapy within GATOR1]
+    - – MTOR gain-of-function (somatic mosaic) [exceptional responders]
+    - – TSC1 loss-of-function [urothelial carcinoma outside tuberous sclerosis complex]
+  - ⊣ KU-0063794
+  - → Small-molecule mTORC2 activator [mouse and Drosophila]
+  - ⊣ OSI-027
+  - → Phosphatidic acid
+    - → DGKζ (diacylglycerol kinase ζ) [skeletal muscle, mechanical load]
+      - → Mechanical load [skeletal muscle]
+    - → Phospholipase D1
+      - → Mechanical load [skeletal muscle, resistance exercise] ↺
+      - → Rheb ↺
+  - → Class I PI3K (p110α/p85) [growth-factor stimulation]
+    - ⊣ Alpelisib (ATP site of p110α) [PIK3CA-mutant HR+ breast cancer]
+      - – PIK3CA activating mutation [HR-positive HER2-negative breast cancer] ↺
+    - ⊣ Alpelisib ↺
+    - ⊣ Alpelisib ↺
+    - ⊣ Apitolisib
+    - ⊣ Dactolisib
+    - → EGFR
+    - → Estrogen receptor α [endothelium; TSC2-null LAM cells]
+      - → Estrogen (17β-estradiol)
+    - → Insulin
+    - → IRS-1 [insulin / IGF-1 stimulation]
+      - → IGF-1 receptor
+      - → Insulin receptor
+      - ⊣ mTORC1 (Ser636, Ser639) ↺
+      - → Rapamycin (sirolimus) ↺
+      - ⊣ S6K1 (p70 S6 kinase 1) (Ser1101, Ser307, Ser636, Ser639) ↺
+      - ⊣ S6K1 (p70 S6 kinase 1) (Ser1101, Ser307, Ser636, Ser639) [chronic insulin stimulation, obesity] ↺
+    - ⊣ p85α (PIK3R1)
+    - → Ras (K/H/N-Ras)
+      - ⊣ Neurofibromin (NF1)
+      - → SOS1 (Son of sevenless 1)
+      - → NF1 loss-of-function [somatic or germline]
+    - ⊣ RTB101
+    - → Receptor tyrosine kinases (generic)
+      - → Receptor tyrosine kinase amplification [cancer] ↺
+    - → PIK3CA activating mutation (E542K, E545K, H1047L, H1047R) [breast (30–40%), endometrial (30%) cancer; somatic mosaic in FCD II/HME]
+    - → PIK3CA activating mutation (E542K, E545K, H1047L, H1047R) [somatic; also mosaic in cortical malformation] ↺
+    - → Receptor tyrosine kinase amplification [somatic, solid tumours]
+    - – p85α (PIK3R1) ↺
+  - → PI(3,4,5)P3
+    - → Class I PI3K (p110α/p85) ↺
+    - → Class I PI3K (p110α/p85) [growth-factor stimulation] ↺
+    - ⊣ PTEN
+      - → p53 [DNA damage] ↺
+      - ⊣ PTEN loss [cancer] ↺
+    - ⊣ PTEN (D3 phosphate) ↺
+    - → PTEN loss [somatic or germline]
+    - – PI(4,5)P2
+  - → PI(3,4,5)P3 [growth-factor stimulation] ↺
+  - ⊣ PP242
+  - ⊣ Rapamycin (sirolimus) [chronic or continuous dosing]
+    - ⊣ ABCB1 (P-glycoprotein) [blood-brain barrier] ↺
+    - ⊣ ABCB1 (P-glycoprotein) ↺
+    - ⊣ CYP3A4 ↺
+    - – Temsirolimus
+      - ⊣ ABCB1 (P-glycoprotein) ↺
+      - ⊣ CYP3A4 ↺
+  - ⊣ Rapamycin (sirolimus) [chronic dosing; cell-type dependent] ↺
+  - → Ribosome
+    - – 47S pre-rRNA
+      - → RNA polymerase I
+    - → Ribosome biogenesis
+      - ⊣ LARP1
+      - → mTORC1 ↺
+      - → c-Myc
+      - ⊣ Rapamycin (sirolimus) ↺
+      - → S6K1 (p70 S6 kinase 1) ↺
+    - – Ribosomal protein S6
+      - → S6K1 (p70 S6 kinase 1) (Ser235, Ser236, Ser240, Ser244) ↺
+      - → S6K2 (p70 S6 kinase 2) (Ser235, Ser236, Ser240, Ser244)
+      - → p90 RSK (Ser235, Ser236) [mTORC1-independent Ras-ERK input] ↺
+    - – 5S rRNA
+      - → RNA polymerase III
+    - → 5'TOP mRNAs
+      - ⊣ 4E-BP1
+      - ⊣ LARP1 ↺
+      - → LARP1 ↺
+  - → Ribosome ↺
+  - ⊣ Sapanisertib
+  - ⊣ Torin1 [tool compound]
+  - → TSC complex (TSC1–TSC2–TBC1D7)
+    - ⊣ AKT (PKB) [insulin stimulation] ↺
+    - → Oxidative stress (ROS) [oxidative stress; peroxisome] ↺
+    - → TBC1D7
+      - ⊣ TBC1D7 loss of function [rare recessive megalencephaly syndrome]
+    - – TBC1D7 ↺
+    - – TSC1 (hamartin)
+      - ⊣ IKKβ (Ser487, Ser511) [TNF-alpha / inflammatory signalling] ↺
+      - ⊣ TSC1 loss-of-function [tuberous sclerosis; urothelial carcinoma exceptional responders] ↺
+      - – PER2 (Period 2) [mouse liver and cultured cells] ↺
+    - – TSC2 (tuberin)
+      - ⊣ AKT (PKB) (Ser1130, Ser1132, Ser939, Ser981, Thr1462) [growth-factor stimulation] ↺
+      - ⊣ AKT (PKB) (Ser939, Thr1462) [retained without AKT Ser473] ↺
+      - → AMPK (AMP-activated protein kinase) (Ser1387, Thr1271) [energy stress / glucose deprivation] ↺
+      - → REDD1 (DDIT4) [hypoxia, energy and ER stress]
+      - ⊣ ERK1/2 (Ser540, Ser664) ↺
+      - → GSK3β (Ser1337, Ser1341) [energy stress; Wnt signalling] ↺
+      - ⊣ HERC1
+      - ⊣ Mechanical load [skeletal muscle] ↺
+      - ⊣ p90 RSK (Ser1798) ↺
+      - ⊣ SGK1 (Ser939) [reported in PI3K-inhibitor-resistant tumour cells]
+      - → p53 [DNA damage; mouse tissues and cell lines] ↺
+      - → TSC1 (hamartin) ↺
+      - ⊣ TSC2 loss-of-function [tuberous sclerosis, LAM, PEComa]
+      - ⊣ 14-3-3 (Ser1210, Ser939, Ser981, Thr1462) ↺
+      - – MK2 (Ser1210) [p38 stress signalling]
+      - – PEX5 (peroxisomal import receptor) [peroxisome]
+  - ⊣ Vistusertib
+  - – DEPTOR ↺
+  - – mSin1
+    - → AKT (PKB) (Thr86) ↺
+    - → PI(3,4,5)P3 [growth-factor stimulation] ↺
+    - → PI(3,4,5)P3 ↺
+    - → PI(3,4,5)P3 (mSin1 PH domain) [growth-factor stimulation] ↺
+    - ⊣ S6K1 (p70 S6 kinase 1) (Thr398, Thr86) ↺
+    - ⊣ S6K1 (p70 S6 kinase 1) (Thr398, Thr86) [reported in tumour cell lines] ↺
+    - – mSin1 CRIM domain
+    - – mSin1 PH domain
+      - → PI(3,4,5)P3 ↺
+    - – Ras (K/H/N-Ras) [shown chiefly with oncogenic KRAS/HRAS in cultured cells] ↺
+    - – Ras (K/H/N-Ras) ↺
+    - – mSin1 Ras-binding domain
+  - – mSin1 ↺
+  - – mSin1 isoform 5 (mSin1.5, PH-domain-less)
+  - → mLST8 (GbetaL) [mouse genetics]
+  - – mLST8 (GbetaL) ↺
+  - – mLST8 (GbetaL) ↺
+  - – mTOR
+    - ⊣ Apitolisib ↺
+    - ⊣ AZD8055 ↺
+    - ⊣ Dactolisib ↺
+    - ⊣ DEPTOR ↺
+    - ⊣ FKBP12-rapamycin complex [prolonged exposure]
+      - ⊣ Tacrolimus (FK506) [co-administration]
+      - – FKBP12
+      - – Rapamycin (sirolimus) ↺
+      - – Rapamycin (sirolimus) ↺
+    - → Hsp90
+      - – Cdc37
+    - ⊣ KU-0063794 [tool compound] ↺
+    - ⊣ mSin1 (mSin1 PH domain) [basal, growth-factor-deprived state] ↺
+    - → mLST8 (GbetaL) ↺
+    - ⊣ OSI-027 ↺
+    - ⊣ PP242 [tool compound] ↺
+    - ⊣ RapaLink-1
+    - → Rheb [lysosomal surface]
+      - ⊣ BNIP3 [hypoxia]
+      - ⊣ RNF152 (Lys8) [growth-factor withdrawal]
+      - → TCTP
+      - ⊣ TSC2 (tuberin) (Asn1643 (TSC2 asparagine thumb)) ↺
+      - ⊣ TSC complex (TSC1–TSC2–TBC1D7) [lysosomal surface] ↺
+      - → TSC1 loss-of-function [germline plus somatic second hit, or somatic] ↺
+      - → TSC2 loss-of-function [germline plus somatic second hit, or somatic] ↺
+      - → Farnesyltransferase (Cys181 (CAAX))
+      - → Lysosome ↺
+    - ⊣ RTB101 ↺
+    - ⊣ Torin2
+    - → TTT complex (Tel2-Tti1-Tti2) ↺
+    - → MTOR E1799K (E1799K) [germline]
+    - → MTOR FAT-domain hotspot variants (A1459P, C1483Y, E1799K) [cancer-associated variants; biochemical and cell models]
+    - → MTOR gain-of-function (somatic mosaic) [somatic mosaicism in brain] ↺
+    - → MTOR kinase-domain hotspot variants (E2419K, S2215Y) [somatic, renal cell and urothelial carcinoma]
+    - ⊣ Vistusertib ↺
+    - – AKT (PKB) (Ser2448) ↺
+    - – mTOR kinase ATP cleft
+      - ⊣ RapaLink-1 ↺
+      - ⊣ RMC-5552 ↺
+    - – ETV7 [ETV7-expressing tumour cells]
+    - – mTOR FATC domain
+    - – mTOR FAT domain
+      - → Rheb ↺
+    - – FRB domain of mTOR
+      - ⊣ FKBP12-rapamycin complex ↺
+      - ⊣ FKBP12-rapamycin complex ↺
+      - ⊣ FKBP12-rapamycin complex ↺
+      - ⊣ mSin1 ↺
+      - ⊣ RapaLink-1 ↺
+      - ⊣ Rictor ↺
+      - ⊣ Rictor ↺
+      - ⊣ Rictor [assembled mTORC2] ↺
+      - ⊣ RMC-5552 ↺
+      - ⊣ mTOR FRB resistance mutation (Ser2035) [acquired and engineered rapamycin resistance]
+    - – FRB domain of mTOR ↺
+    - – mTOR N-HEAT/M-HEAT solenoid
+    - – mTOR kinase domain (PIKK)
+      - ⊣ mTOR FAT domain [basal state] ↺
+      - ⊣ mSin1 PH domain ↺
+      - → mTOR FATC domain ↺
+      - – FRB domain of mTOR ↺
+      - – mLST8 (GbetaL) ↺
+    - → mLST8 (GbetaL) ↺
+    - → mTOR ↺
+    - – mTOR (Ser2481) ↺
+    - – mTORC2 (Ser2481) ↺
+    - → Rictor ↺
+    - – S6K1 (p70 S6 kinase 1) (Ser2448) ↺
+    - → Raptor
+      - ⊣ PRAS40 ↺
+      - ⊣ AMPK (AMP-activated protein kinase) (Ser722, Ser792) [energy stress] ↺
+      - ⊣ AMPK (AMP-activated protein kinase) (Ser722, Ser792) [energy stress] ↺
+      - → ERK1/2 (Ser696, Ser8, Ser863) ↺
+      - ⊣ hexokinase 2 [glucose deprivation; cardiomyocytes, cancer cells]
+      - → mTOR (Ser863) [insulin stimulation] ↺
+      - → Rag GTPase heterodimer (RagA/B-RagC/D) ↺
+      - ⊣ Rictor ↺
+      - → p90 RSK (Ser719, Ser721, Ser722) ↺
+      - → p90 RSK (Ser719, Ser721, Ser722) ↺
+      - ⊣ ULK1 (Ser792, Ser855, Ser859) [autophagy-inducing conditions] ↺
+      - ⊣ 14-3-3 (Ser722, Ser792) [energy stress] ↺
+      - – PER2 (Period 2) ↺
+      - → Rag GTPase heterodimer (RagA/B-RagC/D) [amino-acid sufficiency] ↺
+      - → RAIP motif
+      - → TOS motif (TOR signalling motif) ↺
+  - – mTOR ↺
+  - – Protor-1
+  - – Protor-1 ↺
+  - – Protor-2
+  - – Protor-2 ↺
+  - – Rictor
+    - ⊣ GSK3β (Ser1235) [ER stress]
+      - ⊣ AKT (PKB) (Ser9) ↺
+      - ⊣ AKT (PKB) (Ser9) [retained without AKT Ser473] ↺
+      - ⊣ AKT (PKB) (Ser9) [cancer; distal-network lesions] ↺
+      - ⊣ Wnt ligands
+    - ⊣ S6K1 (p70 S6 kinase 1) (Thr1135) ↺
+    - ⊣ S6K1 (p70 S6 kinase 1) (Thr1135) ↺
+    - ⊣ S6K1 (p70 S6 kinase 1) (Thr1135) ↺
+    - → mSin1 (mSin1 N-terminal Rictor-binding segment) ↺
+    - – Protor-1 ↺
+    - – Protor-2 ↺
+    - – 14-3-3 (Thr1135)
+      - ⊣ REDD1 (DDIT4) [hypoxia] ↺
+  - – Rictor ↺
+  - – RMC-5552
+  - → TTT complex (Tel2-Tti1-Tti2)
+    - → RUVBL1 (Pontin)
+    - → RUVBL2 (Reptin)
+    - – Tel2
+    - – Tti1
+      - → Tel2 ↺
+    - – Tti2

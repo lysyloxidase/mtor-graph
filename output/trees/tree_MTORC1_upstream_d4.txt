@@ -1,0 +1,680 @@
+mTORC1
+├── ──┤ PRAS40  (Phe129 (TOS motif); competitive_inhibition; [520,620,637,672])
+│   ├── ──┤ AKT (PKB)  (Thr246; phosphorylation; insulin / growth-factor stimulation; [317,520,620,637])
+│   │   ├── ──┤ Capivasertib  (ATP site; drug_inhibition; AKT-pathway-altered HR+ breast cancer; [613])
+│   │   ├── ──┤ Capivasertib  (drug_inhibition; [613])  ↺
+│   │   ├── ──┤ Capivasertib  (competitive_inhibition; [613])  ↺
+│   │   ├── ──┤ mTORC1  (other; acute pharmacological mTORC1 inhibition; [222,248,500,687])  ↺
+│   │   ├── ──▶ mTORC2  (Ser473; phosphorylation; [3,245,387,388,526,597])  ↺
+│   │   ├── ──▶ mTORC2  (Ser473; phosphorylation; [3,245,387,388])  ↺
+│   │   ├── ──▶ mTORC2  (Ser473; phosphorylation; [3,245])  ↺
+│   │   ├── ──▶ PDK1  (Thr308; phosphorylation; [3,4])
+│   │   │   ├── ──▶ PI(3,4,5)P3  (membrane_targeting; [124,343])  ↺
+│   │   │   └── ──▶ S6K1 (p70 S6 kinase 1)  (Thr389; binding; [46,179,378,481])  ↺
+│   │   ├── ──▶ PDK1  (Thr308; phosphorylation; [3])  ↺
+│   │   ├── ──┤ PHLPP1/2  (Ser473; dephosphorylation; [184])
+│   │   ├── ──▶ PI(3,4,5)P3  (membrane_targeting; [577])
+│   │   │   ├── ──▶ Class I PI3K (p110α/p85)  (metabolic_conversion; [72,77,260,386])  ↺
+│   │   │   ├── ──▶ Class I PI3K (p110α/p85)  (metabolic_conversion; growth-factor stimulation; [72,260,386])  ↺
+│   │   │   ├── ──┤ PTEN  (dephosphorylation; [376])
+│   │   │   ├── ──┤ PTEN  (D3 phosphate; metabolic_conversion; [376])  ↺
+│   │   │   ├── ──▶ PTEN loss  (genetic_loss_of_function; somatic or germline; [376])
+│   │   │   └── ──» PI(4,5)P2  (metabolic_conversion; [72,77,260,386])
+│   │   ├── ──┤ PP2A (B55α holoenzyme)  (Thr308; dephosphorylation; [321])
+│   │   ├── ──▶ DNA-PKcs  (Ser473; phosphorylation; DNA damage; growth-factor-independent; [54,167])
+│   │   ├── ──▶ AKT1 activating mutation  (E17K; genetic_gain_of_function; breast, colorectal, ovarian cancer; [85])
+│   │   ├── ──▶ AKT1 activating mutation  (genetic_gain_of_function; somatic, solid tumours; [85])  ↺
+│   │   ├── ──▶ mSin1 CRIM domain  (recruitment; [74,483,596,597])
+│   │   ├── ──▶ mSin1  (scaffolding; [74,483,597])  ↺
+│   │   ├── ──▶ mSin1  (binding; [597])  ↺
+│   │   ├── ──▶ mSin1  (mSin1 CRIM domain acidic loop; scaffolding; [74,597])  ↺
+│   │   ├── ──▶ mTORC2  (Thr450; phosphorylation; [163,257,271,439,706])  ↺
+│   │   ├── ──▶ mTORC2  (Thr450; phosphorylation; cotranslational, ribosome-associated; [163,257,439,706])  ↺
+│   │   ├── ──▶ mTORC2  (Thr450; phosphorylation; cotranslational; [163,257,271])  ↺
+│   │   ├── ──▶ PI(3,4,5)P3  (AKT PH domain; lipid_binding; growth-factor stimulation; [273,577])  ↺
+│   │   ├── ──◇ Rapamycin (sirolimus)  (Ser473, Thr308; other; [222,500,527])  ↺
+│   │   ├── ──▶ Rictor  (binding; [597])  ↺
+│   │   ├── ──▶ Rictor  (N-terminal mooring (mSin1/Rictor); scaffolding; [597])  ↺
+│   │   └── ──◇ Sapanisertib  (Ser473, Thr308; other; class effect of ATP-competitive mTOR inhibitors; [500])  ↺
+│   ├── ──┤ AKT (PKB)  (Thr246; phosphorylation; insulin/growth-factor stimulation; [520,620,637])  ↺
+│   ├── ──┤ mTORC1  (Ser183, Ser212, Ser221; phosphorylation; [441,638])  ↺
+│   ├── ──┤ 14-3-3  (Thr246; sequestration; [317,520,620])
+│   │   └── ──┤ REDD1 (DDIT4)  (binding; hypoxia; [139,626])
+│   │       ├── ──▶ ATF4  (transcriptional_regulation; ER stress, energy stress; [277,649])  ↺
+│   │       ├── ──▶ CLOCK–BMAL1 heterodimer  (transcriptional_regulation; mouse peripheral tissues, circadian transcriptome atlas; [696])  ↺
+│   │       ├── ──▶ Energy stress (high AMP/ATP)  (transcriptional_regulation; energy stress; [570])  ↺
+│   │       ├── ──▶ HIF-1alpha  (transcriptional_regulation; hypoxia; [58,566])  ↺
+│   │       ├── ──▶ Hypoxia  (transcriptional_regulation; hypoxia; [58,139])  ↺
+│   │       └── ──▶ p53  (transcriptional_regulation; DNA damage; [160])  ↺
+│   ├── ──▶ Raptor  (binding; [437,520,532,620,637])  ↺
+│   └── ──■ TOS motif (TOR signalling motif)  (binding; [441,637])
+├── ──┤ PRAS40  (competitive_inhibition; growth-factor withdrawal; [637,672])  ↺
+├── ──▶ Amino acids (pool)  (recruitment; amino-acid replete cells; [521,522])
+│   ├── ──▶ autophagy  (metabolic_conversion; prolonged starvation; [686])  ↺
+│   ├── ──» autophagy  (metabolic_conversion; prolonged starvation; [686])  ↺
+│   ├── ──▶ SLC38A9  (transport; [642,664])  ↺
+│   └── ──▶ Lysosomal v-ATPase  (transport; [1,708])
+│       ├── ──◇ Amino acids (pool)  (sensing; lysosomal lumen; [708])  ↺
+│       └── ──◇ LAMTOR1 (p18)  (binding; [708])  ↺
+├── ──▶ Amino acids (pool)  (sensing; prolonged starvation; [686])  ↺
+├── ──┤ AMPK (AMP-activated protein kinase)  (other; energy stress; [187,207,216,226,262])
+│   ├── ──▶ A-769662  (drug_activation; experimental/pharmacological activator; [117])
+│   ├── ──▶ ADP  (binding; [200,438,665])
+│   ├── ──▶ AICAR (acadesine)  (drug_activation; experimental activator; [118])
+│   ├── ──┤ AKT (PKB)  (Ser487 (human AMPK alpha1; Ser485 in rat); phosphorylation; AMPK alpha1; growth-factor-stimulated cells; [228,240])  ↺
+│   ├── ──▶ Aldolase A  (sensing; glucose starvation; [698])
+│   │   └── ──┤ Fructose-1,6-bisphosphate  (binding; glucose deprivation; [698])
+│   │       └── ──» Glucose  (metabolic_conversion; [698])  ↺
+│   ├── ──▶ AMP  (allosteric_activation; [187,200,216,665])
+│   │   └── ──▶ Energy stress (high AMP/ATP)  (other; [187,216])  ↺
+│   ├── ──▶ ATM kinase  (other; oxidative stress (H2O2); [5])
+│   │   ├── ──▶ DNA damage  (Ser1981; other; [21])
+│   │   └── ──▶ Oxidative stress (ROS)  (Cys2991; other; oxidative stress; [5,205])  ↺
+│   ├── ──┤ ATP  (competitive_inhibition; [187,216,665])
+│   │   └── ──▶ Mitochondrial complex I (NADH dehydrogenase)  (other; biguanide exposure; [235,442])
+│   │       └── ──┤ Metformin  (drug_inhibition; hepatocytes; [159,442])  ↺
+│   ├── ──▶ AXIN1  (scaffolding; lysosomal surface; [694,695])
+│   │   └── ──▶ Ragulator (LAMTOR1-5)  (recruitment; glucose starvation; [695])  ↺
+│   ├── ──▶ Caloric restriction  (other; liver, skeletal muscle; rodent CR regimens; [78,172])  ↺
+│   ├── ──▶ CaMKK2 (CaMKK-beta)  (Thr172; phosphorylation; Ca2+-mobilising stimuli; LKB1-deficient cells; [227,658])
+│   │   └── ──▶ Ca2+ (cytosolic calcium)  (allosteric_activation; [227])
+│   │       └── ──▶ TRPML1  (transport; starvation / lysosomal stress; [406])  ↺
+│   ├── ──▶ Energy stress (high AMP/ATP)  (sensing; [187,216])
+│   │   └── ──▶ Exercise  (other; skeletal muscle contraction; [654])  ↺
+│   ├── ──▶ Exercise  (other; skeletal muscle; endurance/contractile exercise; [172,652])
+│   ├── ──▶ Glucose deprivation  (sensing; glucose starvation; [517,698])  ↺
+│   ├── ──▶ Hypoxia  (sensing; hypoxia; [357])  ↺
+│   ├── ──▶ LKB1-STRADA-MO25 complex  (Thr172; phosphorylation; [187,216,226])
+│   │   ├── ──┤ STRADA biallelic loss of function  (genetic_loss_of_function; PMSE syndrome; [450,480])  ↺
+│   │   ├── ──■ MO25-alpha (CAB39)  (complex_formation; [226])
+│   │   ├── ──■ LKB1 (STK11)  (complex_formation; [226])  ↺
+│   │   └── ──■ STRAD-alpha (STRADA)  (complex_formation; [226])
+│   │       └── ──┤ STRADA biallelic loss of function  (genetic_loss_of_function; PMSE syndrome; neurons; [450,480])  ↺
+│   ├── ──▶ Metformin  (drug_activation; liver, skeletal muscle, tumour cells; [172,553,705])  ↺
+│   ├── ──┤ mTORC1  (Ser345; phosphorylation; nutrient stress; proliferating cells; [353])  ↺
+│   ├── ──▶ Oxidative stress (ROS)  (sensing; oxidative stress; [233,707])
+│   ├── ──┤ PP2Cα (PPM1A)  (Thr172; dephosphorylation; [130,200])
+│   ├── ──▶ Sestrin1  (other; DNA damage; [65])
+│   │   ├── ──┤ Leucine  (C-terminal leucine-binding pocket; binding; [655])  ↺
+│   │   └── ──▶ p53  (transcriptional_regulation; DNA damage; [65,628])
+│   │       ├── ──▶ AMPK (AMP-activated protein kinase)  (Ser15; phosphorylation; glucose deprivation; [282])  ↺
+│   │       ├── ──▶ ATM kinase  (Ser15; phosphorylation; DNA damage; [25,76])  ↺
+│   │       └── ──▶ DNA damage  (Ser15, Ser20; other; [25,65,76,234])  ↺
+│   ├── ──▶ Sestrin2  (other; [65,337])
+│   │   ├── ──▶ ATF4  (transcriptional_regulation; amino-acid starvation; ER stress; [63,676])
+│   │   │   ├── ──▶ eIF2alpha (EIF2S1)  (translational_regulation; integrated stress response; [219,625])
+│   │   │   ├── ──┤ mTORC1  (degradation; glutamine metabolism and SIRT4 repression in proliferating cells; [122])  ↺
+│   │   │   └── ──▶ mTORC1  (translational_regulation; growth-factor and nutrient sufficiency; [36,449,605])  ↺
+│   │   ├── ──┤ Leucine  (C-terminal leucine-binding pocket; binding; [530,655])  ↺
+│   │   └── ──▶ p53  (transcriptional_regulation; DNA damage; [64,65])  ↺
+│   ├── ──▶ Sestrin2  (binding; DNA damage; genotoxic stress; [65])  ↺
+│   ├── ──▶ LKB1 (STK11)  (Thr172; phosphorylation; [187,216,226,552])
+│   │   ├── ──▶ AXIN1  (scaffolding; energy stress; liver; [694])  ↺
+│   │   ├── ──▶ MO25-alpha (CAB39)  (scaffolding; [52,226])  ↺
+│   │   ├── ──▶ STRAD-alpha (STRADA)  (allosteric_activation; [15,226])  ↺
+│   │   ├── ──┤ STK11 (LKB1) loss-of-function  (genetic_loss_of_function; Peutz-Jeghers syndrome; lung adenocarcinoma; [138,231,551])  ↺
+│   │   ├── ──┤ STRADA biallelic loss of function  (genetic_loss_of_function; autosomal recessive; [450,480])  ↺
+│   │   └── ──◇ ATM kinase  (Thr366; phosphorylation; DNA damage; oxidative stress; [5,524])  ↺
+│   ├── ──┤ ULK1  (phosphorylation; [367])
+│   │   ├── ──▶ AMBRA1  (stabilisation; on mTORC1 inhibition; [431])
+│   │   │   └── ──┤ mTORC1  (Ser52; phosphorylation; [431])  ↺
+│   │   ├── ──▶ AMPK (AMP-activated protein kinase)  (Ser317, Ser555, Ser777; phosphorylation; glucose starvation; [157,309])  ↺
+│   │   ├── ──▶ AMPK (AMP-activated protein kinase)  (Ser317, Ser555, Ser777; phosphorylation; mouse ULK1 site numbering; energy-stress models; [157,309])  ↺
+│   │   ├── ──┤ mTORC1  (Ser757; phosphorylation; nutrient sufficiency; mouse site numbering; [157,183,242,286,309])  ↺
+│   │   ├── ──┤ mTORC1  (Ser637; phosphorylation; mouse site numbering; human experiments in Shang 2011; [550])  ↺
+│   │   ├── ──┤ Raptor  (binding; [242,286])  ↺
+│   │   ├── ──┤ Raptor  (binding; nutrient-rich conditions; [242,286,309])  ↺
+│   │   ├── ──▶ AMPK (AMP-activated protein kinase)  (binding; energy stress / autophagy initiation; [157,309])  ↺
+│   │   ├── ──■ ATG101  (complex_formation; [253])
+│   │   ├── ──■ ATG13  (complex_formation; [183,242,286])
+│   │   │   ├── ──┤ mTORC1  (phosphorylation; [242,253,479])  ↺
+│   │   │   └── ──◇ ULK1  (phosphorylation; [183,283,286])  ↺
+│   │   └── ──■ FIP200  (complex_formation; [183,242,286])
+│   │       └── ──◇ ULK1  (phosphorylation; [183,286])  ↺
+│   ├── ──┤ STK11 (LKB1) loss-of-function  (genetic_loss_of_function; somatic or germline; [187,207,216,226,262,375,624])  ↺
+│   ├── ──◇ FNIP1  (binding; [16])
+│   ├── ──■ AMPK beta1 (scaffold subunit)  (complex_formation; [187,216])
+│   │   ├── ──┤ Glycogen  (binding; muscle and liver glycogen stores; [403])
+│   │   └── ──▶ p53  (transcriptional_regulation; DNA damage; [169])  ↺
+│   └── ──■ AMPK gamma1 (nucleotide-sensing subunit)  (complex_formation; [187,216,665])
+├── ──▶ Androgen receptor  (other; prostate cancer; [89,666])
+│   └── ──▶ Androgens  (binding; [93])
+├── ──▶ Arf1  (other; glutamine stimulation; Rag-independent; [275])
+│   └── ──▶ Glutamine  (other; Rag-independent arm; [275])
+│       ├── ──▶ SLC1A5 (ASCT2)  (transport; [55,435])
+│       └── ──◇ SLC7A5 (LAT1 light chain)  (transport; [435])
+│           └── ──▶ SLC3A2 (CD98 heavy chain)  (complex_formation; [396,435])
+├── ──▶ autophagy  (other; prolonged starvation; autophagic lysosome reformation; [686])
+│   ├── ──┤ Ageing  (physiological_output; ageing brain; [49,379])  ↺
+│   ├── ──▶ C/EBPβ (CEBPB)  (transcriptional_regulation; liver; [371])
+│   │   └── ──◇ Circadian clock (transcription–translation feedback loop)  (transcriptional_regulation; liver; [371])  ↺
+│   ├── ──▶ CLEAR gene network  (physiological_output; [445,543])
+│   │   ├── ──▶ TFE3  (transcriptional_regulation; [394])
+│   │   │   ├── ──┤ mTORC1  (Ser321; phosphorylation; nutrient sufficiency; [392,394,498])  ↺
+│   │   │   └── ──┤ 14-3-3  (sequestration; [392])  ↺
+│   │   └── ──▶ TFEB  (transcriptional_regulation; [445,528,543])  ↺
+│   ├── ──┤ p300  (acetylation; [335])
+│   │   └── ──▶ mTORC1  (Ser2271, Ser2279, Ser2291, Ser2315; phosphorylation; [634])  ↺
+│   ├── ──┤ mTORC1  (physiological_output; [253,309,686])  ↺
+│   ├── ──▶ Class III PI3K complex I  (physiological_output; [253,511])
+│   │   ├── ──▶ AMBRA1  (binding; [170])  ↺
+│   │   ├── ──■ ATG14L  (complex_formation; [253,511])
+│   │   │   ├── ──┤ mTORC1  (Ser223, Ser3, Ser383, Ser440, Thr233; phosphorylation; nutrient sufficiency; [253,689])  ↺
+│   │   │   └── ──▶ ULK1  (Ser29; phosphorylation; starvation; [448])  ↺
+│   │   ├── ──■ Beclin-1  (complex_formation; [253,511])
+│   │   │   └── ──▶ ULK1  (Ser14; phosphorylation; [511])  ↺
+│   │   └── ──■ VPS34  (complex_formation; [253,511])
+│   ├── ──▶ PI3KC3 complex II (VPS34–Beclin-1–UVRAG)  (physiological_output; [349])
+│   │   ├── ──■ Beclin-1  (complex_formation; [349])  ↺
+│   │   └── ──■ UVRAG  (complex_formation; [265,349])
+│   │       └── ──┤ mTORC1  (Ser498; phosphorylation; [312])  ↺
+│   ├── ──▶ Rapamycin (sirolimus)  (drug_inhibition; CNS; neurodegeneration models; [49,379,488])  ↺
+│   ├── ──▶ Rapamycin (sirolimus)  (drug_activation; preclinical neurodegeneration models; [49,379,488])  ↺
+│   ├── ──▶ Pacer  (other; [104])
+│   │   └── ──┤ mTORC1  (Ser157; phosphorylation; [105])  ↺
+│   ├── ──▶ ULK1  (physiological_output; [253,309,511])  ↺
+│   ├── ──▶ ATG12–ATG5–ATG16L1 complex  (physiological_output; [146])
+│   │   └── ──▶ WIPI2  (recruitment; [146])
+│   │       ├── ──┤ mTORC1  (Ser395; phosphorylation; [635])  ↺
+│   │       └── ──▶ Phosphatidylinositol 3-phosphate (PI3P)  (lipid_binding; [146])
+│   └── ──◇ Circadian clock (transcription–translation feedback loop)  (transcriptional_regulation; mouse liver; [371])  ↺
+├── ──┤ BMAL1 (ARNTL)  (other; mouse tissues, whole-body Bmal1 deletion; [304])
+│   ├── ──▶ mTORC1  (stabilisation; neuronal Tsc1-knockout and Tsc2-heterozygous mice; [355])  ↺
+│   ├── ──┤ REV-ERBα (NR1D1)  (transcriptional_regulation; [478])
+│   │   └── ──▶ CLOCK–BMAL1 heterodimer  (transcriptional_regulation; [478])  ↺
+│   └── ──▶ S6K1 (p70 S6 kinase 1)  (Ser42; phosphorylation; mouse liver; nutrient-responsive; [354])
+│       ├── ──┤ Everolimus  (Thr389; drug_inhibition; [24,37,108])  ↺
+│       ├── ──▶ Leucine  (Thr389; physiological_output; human skeletal muscle, oral leucine bolus at rest; [650])  ↺
+│       ├── ──▶ mTORC1  (Ser371; phosphorylation; [378,423,516,562])  ↺
+│       ├── ──▶ mTORC1  (Thr389; phosphorylation; [68,378,481])  ↺
+│       ├── ──▶ PDK1  (Thr229; phosphorylation; requires prior mTORC1 phosphorylation of S6K1 Thr389; [378,481])  ↺
+│       ├── ──▶ PDK1  (Thr229; phosphorylation; [378,481])  ↺
+│       ├── ──┤ PP2A  (Thr389; dephosphorylation; [464])
+│       ├── ──┤ Rapamycin (sirolimus)  (Thr389; drug_inhibition; [111,166,603])  ↺
+│       ├── ──┤ RMC-5552  (Thr389; drug_inhibition; [69,339])  ↺
+│       ├── ──┤ S6K1 (p70 S6 kinase 1)  (autoinhibition; [378])  ↺
+│       ├── ──┤ Sapanisertib  (Thr389; drug_inhibition; [166,603])  ↺
+│       ├── ──┤ Torin1  (Thr389; drug_inhibition; [166,603])  ↺
+│       ├── ──▶ Bmal1 loss of function (Bmal1-null)  (Thr389; other; Bmal1-null mice, multiple tissues; [304])  ↺
+│       ├── ──◇ Circadian clock (transcription–translation feedback loop)  (Thr389; other; mouse liver, polysome and ribosome profiling; [284])  ↺
+│       ├── ──▶ eIF3 complex  (scaffolding; [236])
+│       │   ├── ──▶ eIF4B  (binding; [236])
+│       │   ├── ──▶ eIF4G1  (binding; [223,572])
+│       │   └── ──▶ mTORC1  (recruitment; [236])  ↺
+│       ├── ──▶ Raptor  (binding; [437,532])  ↺
+│       ├── ──▶ SKAR (POLDIP3)  (recruitment; [369])
+│       │   └── ──◇ S6K1 (p70 S6 kinase 1)  (Ser383, Ser385; phosphorylation; [369,493])  ↺
+│       └── ──■ TOS motif (TOR signalling motif)  (binding; [437,532])  ↺
+├── ──┤ Caloric restriction  (other; mouse liver; time-of-day dependent; [612])
+├── ──▶ Cholesterol (lysosomal)  (other; [92])
+├── ──┤ DEPTOR  (binding; [466])
+│   ├── ──┤ betaTrCP  (ubiquitination; [150,186,701])
+│   ├── ──┤ betaTrCP  (degradation; [150,186,701])  ↺
+│   ├── ──┤ CK1alpha  (phosphorylation; [150,186])
+│   ├── ──┤ mTORC1  (phosphorylation; growth-factor/nutrient sufficiency; [150,186,466])  ↺
+│   ├── ──┤ mTORC2  (phosphorylation; [150,186,466])
+│   │   ├── ──▶ AMPK (AMP-activated protein kinase)  (phosphorylation; acute energetic stress (glucose deprivation, AICAR); [300])  ↺
+│   │   ├── ──┤ XPLN (ARHGEF3)  (binding; [303])
+│   │   ├── ──┤ AZD8055  (drug_inhibition; [112])  ↺
+│   │   ├── ──┤ DEPTOR  (binding; [466])  ↺
+│   │   ├── ──┤ Everolimus  (drug_inhibition; chronic or prolonged exposure only; preassembled mTORC2 spared acutely; [37,527])  ↺
+│   │   ├── ──┤ KU-0063794  (drug_inhibition; [189])  ↺
+│   │   ├── ──▶ Small-molecule mTORC2 activator  (drug_activation; mouse and Drosophila; [280])
+│   │   ├── ──┤ OSI-027  (drug_inhibition; [42])  ↺
+│   │   ├── ──▶ Phosphatidic acid  (stabilisation; [606])  ↺
+│   │   ├── ──▶ Class I PI3K (p110α/p85)  (recruitment; growth-factor stimulation; [706])
+│   │   │   ├── ──┤ Alpelisib  (ATP site of p110α; drug_inhibition; PIK3CA-mutant HR+ breast cancer; [8])
+│   │   │   ├── ──┤ Alpelisib  (drug_inhibition; [8])  ↺
+│   │   │   ├── ──┤ Alpelisib  (competitive_inhibition; [8])  ↺
+│   │   │   ├── ──┤ Apitolisib  (competitive_inhibition; [477,584])  ↺
+│   │   │   ├── ──┤ Dactolisib  (competitive_inhibition; [380])  ↺
+│   │   │   ├── ──▶ EGFR  (other; [398])
+│   │   │   ├── ──▶ Estrogen receptor α  (binding; endothelium; TSC2-null LAM cells; [567,685])
+│   │   │   ├── ──▶ Insulin  (other; [72,260,386])
+│   │   │   ├── ──▶ IRS-1  (recruitment; insulin / IGF-1 stimulation; [17])
+│   │   │   ├── ──┤ p85α (PIK3R1)  (autoinhibition; [411])
+│   │   │   ├── ──▶ Ras (K/H/N-Ras)  (binding; [206,499])  ↺
+│   │   │   ├── ──┤ RTB101  (competitive_inhibition; [291,385])  ↺
+│   │   │   ├── ──▶ Receptor tyrosine kinases (generic)  (recruitment; [72,260,375,386,624])
+│   │   │   ├── ──▶ PIK3CA activating mutation  (E542K, E545K, H1047L, H1047R; genetic_gain_of_function; breast (30–40%), endometrial (30%) cancer; somatic mosaic in FCD II/HME; [411,519,688])
+│   │   │   ├── ──▶ PIK3CA activating mutation  (E542K, E545K, H1047L, H1047R; genetic_gain_of_function; somatic; also mosaic in cortical malformation; [519,688])  ↺
+│   │   │   ├── ──▶ Receptor tyrosine kinase amplification  (genetic_gain_of_function; somatic, solid tumours; [375,624])
+│   │   │   └── ──■ p85α (PIK3R1)  (complex_formation; [622])  ↺
+│   │   ├── ──▶ PI(3,4,5)P3  (membrane_targeting; [360])  ↺
+│   │   ├── ──▶ PI(3,4,5)P3  (membrane_targeting; growth-factor stimulation; [360])  ↺
+│   │   ├── ──┤ PP242  (drug_inhibition; [166])  ↺
+│   │   ├── ──┤ Rapamycin (sirolimus)  (drug_inhibition; chronic or continuous dosing; [527])  ↺
+│   │   ├── ──┤ Rapamycin (sirolimus)  (drug_inhibition; chronic dosing; cell-type dependent; [527])  ↺
+│   │   ├── ──▶ Ribosome  (binding; [439,706])
+│   │   │   ├── ──» 47S pre-rRNA  (other; [255,458])
+│   │   │   ├── ──▶ Ribosome biogenesis  (other; [255,458])
+│   │   │   ├── ──■ Ribosomal protein S6  (complex_formation; [408])
+│   │   │   ├── ──■ 5S rRNA  (complex_formation; [255,458])
+│   │   │   └── ──▶ 5'TOP mRNAs  (translational_regulation; [255,341,401,458])
+│   │   ├── ──▶ Ribosome  (binding; [439,706])  ↺
+│   │   ├── ──┤ Sapanisertib  (drug_inhibition; [112,166,189,603])  ↺
+│   │   ├── ──┤ Torin1  (drug_inhibition; tool compound; [603])  ↺
+│   │   ├── ──▶ TSC complex (TSC1–TSC2–TBC1D7)  (binding; [249])  ↺
+│   │   ├── ──┤ Vistusertib  (drug_inhibition; [112,166,473])  ↺
+│   │   ├── ──■ DEPTOR  (complex_formation; [360,466])  ↺
+│   │   ├── ──■ mSin1  (complex_formation; [102,177,270,360,531,669])  ↺
+│   │   ├── ──■ mSin1  (complex_formation; [270,360,531])  ↺
+│   │   ├── ──■ mSin1 isoform 5 (mSin1.5, PH-domain-less)  (complex_formation; [177])
+│   │   ├── ──▶ mLST8 (GbetaL)  (binding; mouse genetics; [204,306])  ↺
+│   │   ├── ──■ mLST8 (GbetaL)  (complex_formation; [204,306,531])  ↺
+│   │   ├── ──■ mLST8 (GbetaL)  (complex_formation; [204,306])  ↺
+│   │   ├── ──■ mTOR  (complex_formation; [102,269,525,531])  ↺
+│   │   ├── ──■ mTOR  (complex_formation; [102,360,455,531])  ↺
+│   │   ├── ──■ Protor-1  (complex_formation; [455])
+│   │   ├── ──■ Protor-1  (complex_formation; [455])  ↺
+│   │   ├── ──■ Protor-2  (complex_formation; [455])
+│   │   ├── ──■ Protor-2  (complex_formation; [455])  ↺
+│   │   ├── ──■ Rictor  (complex_formation; [102,269,525,531])  ↺
+│   │   ├── ──■ Rictor  (complex_formation; [269,455,525,531])  ↺
+│   │   ├── ──◇ RMC-5552  (drug_inhibition; [69,339,535])  ↺
+│   │   └── ──▶ TTT complex (Tel2-Tti1-Tti2)  (scaffolding; [294])  ↺
+│   ├── ──┤ mTORC2  (phosphorylation; [150,186,466])  ↺
+│   ├── ──┤ S6K1 (p70 S6 kinase 1)  (phosphorylation; [701])  ↺
+│   ├── ──┤ p90 RSK  (phosphorylation; RAS/ERK activation; [701])
+│   │   ├── ──▶ ERK1/2  (Ser363, Thr359, Thr573 (CTKD); phosphorylation; [127,579])  ↺
+│   │   └── ──▶ PDK1  (Ser227 (RSK2 NTKD activation loop); phosphorylation; [178])  ↺
+│   └── ──┤ SCF(beta-TrCP) E3 ubiquitin ligase  (Ser286, Ser287, Ser291; degradation; [150,186,701])
+│       ├── ──■ betaTrCP  (complex_formation; [150,186,701])  ↺
+│       ├── ──■ Cullin-1  (complex_formation; [186])
+│       ├── ──■ beta-TrCP2 (FBXW11)  (complex_formation; [150,186])
+│       └── ──■ SKP1  (complex_formation; [660,703])
+├── ──▶ ERK1/2  (other; suprachiasmatic nucleus; [79])
+│   ├── ──▶ Light (photic input)  (other; suprachiasmatic nucleus, subjective night; [79])  ↺
+│   └── ──▶ MEK1/2  (Thr185/Tyr187 (ERK2, MAPK1), Thr202/Tyr204 (ERK1, MAPK3); phosphorylation; [454])
+│       └── ──▶ RAF kinases  (Ser218 (MEK1), Ser222 (MEK1); phosphorylation; [2])
+│           ├── ──▶ Ras (K/H/N-Ras)  (recruitment; [418,630])  ↺
+│           └── ──┤ Rheb  (binding; TSC-deficient cells; farnesylation-dependent; [258,299])  ↺
+├── ──┤ Everolimus  (drug_inhibition; [24,37,108])
+│   ├── ──┤ ABCB1 (P-glycoprotein)  (transport; blood-brain barrier; [594])
+│   ├── ──┤ ABCB1 (P-glycoprotein)  (transport; blood-brain barrier; [594])  ↺
+│   ├── ──┤ CYP3A4  (metabolic_conversion; [314])
+│   ├── ──◇ DEPDC5 loss-of-function  (other; genotype-directed therapy within GATOR1; [84,417])
+│   ├── ──◇ MTOR gain-of-function (somatic mosaic)  (other; exceptional responders; [201,632])  ↺
+│   └── ──◇ TSC1 loss-of-function  (other; urothelial carcinoma outside tuberous sclerosis complex; [138,267])  ↺
+├── ──▶ Resistance exercise / mechanical overload  (other; skeletal muscle; [241,683])
+├── ──┤ FKBP12-rapamycin complex  (drug_inhibition; [24,37,108])
+│   ├── ──┤ Tacrolimus (FK506)  (competitive_inhibition; co-administration; [151])
+│   ├── ──■ FKBP12  (complex_formation; [24,37,56,107,108,229,230,514,515])
+│   │   ├── ──▶ Everolimus  (binding; [24,37,108])  ↺
+│   │   ├── ──▶ nab-Sirolimus  (binding; [37,633])  ↺
+│   │   ├── ──▶ RapaLink-1  (binding; [501])  ↺
+│   │   ├── ──▶ Rapamycin (sirolimus)  (binding; [24,37,229,230])  ↺
+│   │   ├── ──▶ Rapamycin (sirolimus)  (binding; [24,37,108])  ↺
+│   │   ├── ──▶ Ridaforolimus  (binding; [24,37,108])  ↺
+│   │   ├── ──▶ RMC-5552  (binding; [69,339])  ↺
+│   │   ├── ──▶ Tacrolimus (FK506)  (binding; [217,230])  ↺
+│   │   └── ──▶ Temsirolimus  (binding; [24,37,108])  ↺
+│   ├── ──■ Rapamycin (sirolimus)  (complex_formation; [24,37,229,230])  ↺
+│   └── ──■ Rapamycin (sirolimus)  (complex_formation; [24,108])  ↺
+├── ──┤ FKBP38 (FKBP8)  (binding; [20,639])
+│   └── ──┤ Rheb  (binding; [20,639])  ↺
+├── ──┤ Glucose deprivation  (other; AMPK-independent arm; [155,496])
+├── ──┤ Hypoxia  (other; hypoxia; [58,139,357])
+├── ──▶ IKKβ  (other; inflammatory signalling (TNF); [334])
+│   ├── ──▶ Chronic inflammation  (other; [334])
+│   └── ──▶ TNFα  (other; inflammation, tumour angiogenesis; [334])
+├── ──▶ Leptin  (physiological_output; hypothalamic arcuate nucleus (rodent); [120])
+├── ──▶ Light (photic input)  (other; mouse SCN, light pulse during subjective night; [79])
+├── ──┤ Metformin  (other; [172,243,295])
+├── ──┤ nab-Sirolimus  (drug_inhibition; [37,633])
+│   └── ──◇ TSC2 loss-of-function  (other; malignant PEComa; [633])
+├── ──┤ PER2 (Period 2)  (recruitment; time-of-day dependent; maximal repression at peak PER2; [662])
+│   ├── ──▶ CLOCK–BMAL1 heterodimer  (transcriptional_regulation; [682])
+│   │   ├── ──┤ CRY1 (Cryptochrome 1)  (binding; [320])
+│   │   │   ├── ──┤ AMPK (AMP-activated protein kinase)  (Ser71; phosphorylation; mouse liver and fibroblasts; energy stress; [324])  ↺
+│   │   │   └── ──▶ CLOCK–BMAL1 heterodimer  (transcriptional_regulation; [320])  ↺
+│   │   ├── ──┤ PER2 (Period 2)  (other; [320])  ↺
+│   │   ├── ──┤ PER–CRY repressor complex  (binding; [320])
+│   │   │   ├── ──■ CRY1 (Cryptochrome 1)  (complex_formation; [333])  ↺
+│   │   │   └── ──■ PER2 (Period 2)  (complex_formation; [333])  ↺
+│   │   ├── ──■ BMAL1 (ARNTL)  (complex_formation; [190])  ↺
+│   │   └── ──■ CLOCK  (complex_formation; [190])
+│   ├── ──┤ Casein kinase 1ε (CSNK1E)  (phosphorylation; [617])
+│   │   └── ──▶ AMPK (AMP-activated protein kinase)  (Ser389; phosphorylation; [617])  ↺
+│   └── ──▶ eIF4E  (translational_regulation; suprachiasmatic nucleus, light-induced; [82])
+│       ├── ──┤ 4E-BP1  (sequestration; [19,40,109,193,209,453,463,572])
+│       │   ├── ──▶ AZD8055  (Thr37, Thr46; drug_inhibition; [112])  ↺
+│       │   ├── ──▶ eIF4E  (stabilisation; [667])  ↺
+│       │   ├── ──▶ Everolimus  (Ser65, Thr70; drug_inhibition; partial suppression only; Thr37/Thr46 resistant; [37,40,70])  ↺
+│       │   ├── ──┤ Light (photic input)  (other; suprachiasmatic nucleus; [79,81])  ↺
+│       │   ├── ──┤ mTORC1  (Thr37, Thr46; phosphorylation; [40,68,70,109,193,194,453])  ↺
+│       │   ├── ──┤ mTORC1  (Ser65, Thr70; phosphorylation; [40,70,109,193,194,453])  ↺
+│       │   ├── ──▶ Rapamycin (sirolimus)  (Ser65, Thr70; drug_inhibition; [40,70,111,166,603])  ↺
+│       │   ├── ──▶ RMC-5552  (Ser65, Thr37, Thr46, Thr70; drug_inhibition; [69,339])  ↺
+│       │   ├── ──▶ Sapanisertib  (Ser65, Thr37, Thr46, Thr70; drug_inhibition; [166,246,603])  ↺
+│       │   ├── ──▶ Torin1  (Ser65, Thr37, Thr46, Thr70; drug_inhibition; [166,603])  ↺
+│       │   ├── ──■ RAIP motif  (binding; [70,109,599])  ↺
+│       │   ├── ──◇ Rapamycin (sirolimus)  (Thr37, Thr46; drug_inhibition; rapamycin-resistant sites; [40,70,193,603])  ↺
+│       │   ├── ──▶ Raptor  (binding; [70,437,532,533])  ↺
+│       │   └── ──■ TOS motif (TOR signalling motif)  (binding; [70,109,437,532])  ↺
+│       ├── ──┤ 4E-BP2  (sequestration; hippocampal neurons; [26,195])
+│       │   └── ──┤ mTORC1  (Ser65, Thr37, Thr46, Thr70; phosphorylation; [45,351,604])  ↺
+│       ├── ──┤ LARP1  (competitive_inhibition; mTORC1 inactive / nutrient withdrawal; [171,238,323,469,604])
+│       │   ├── ──┤ mTORC1  (phosphorylation; [171,238,276,604])  ↺
+│       │   └── ──▶ Raptor  (binding; [171,598])  ↺
+│       ├── ──◇ BMAL1 (ARNTL)  (binding; mouse liver, cap-binding and polysome fractions; [354])  ↺
+│       └── ──◇ MNK1/2  (Ser209; phosphorylation; mTORC1-independent MAPK input; [180,615,644])
+│           ├── ──▶ Light (photic input)  (other; suprachiasmatic nucleus; [82])  ↺
+│           └── ──▶ eIF4G1  (recruitment; [482])  ↺
+├── ──▶ Phosphatidic acid  (FRB domain (Arg2109); lipid_binding; mechanical load / mitogens; [165,241,683])
+│   ├── ──▶ DGKζ (diacylglycerol kinase ζ)  (metabolic_conversion; skeletal muscle, mechanical load; [684])
+│   │   └── ──▶ Mechanical load  (other; skeletal muscle; [684])
+│   └── ──▶ Phospholipase D1  (metabolic_conversion; [241])
+│       ├── ──▶ Mechanical load  (other; skeletal muscle, resistance exercise; [241,683])  ↺
+│       └── ──▶ Rheb  (binding; [583])  ↺
+├── ──▶ Phosphatidic acid  (lipid_binding; skeletal muscle; mechanical loading; [241,683])  ↺
+├── ──▶ Rab1A  (other; amino-acid stimulation; [602])
+├── ──▶ Rag GTPase heterodimer (RagA/B-RagC/D)  (recruitment; [7,503,521,522])
+│   ├── ──▶ alpha-Ketoglutarate  (other; glutaminolysis; [153])
+│   │   ├── ──▶ glutaminase  (other; [153])
+│   │   │   └── ──▶ c-Myc  (other; proliferating and tumour cells; [185])
+│   │   ├── ──▶ glutamate dehydrogenase  (metabolic_conversion; [153])
+│   │   │   ├── ──▶ Leucine  (allosteric_activation; [153])  ↺
+│   │   │   └── ──┤ SIRT4  (other; [122])
+│   │   └── ──» Glutamine  (metabolic_conversion; [153])  ↺
+│   ├── ──▶ Glucose  (sensing; neonatal fasting; cultured cells; [155,440])
+│   │   └── ──▶ GLUT1  (transport; [154,621])
+│   │       └── ──▶ HIF-1alpha  (transcriptional_regulation; [154,621])  ↺
+│   ├── ──┤ Glucose deprivation  (sensing; glucose deprivation; [155])  ↺
+│   ├── ──┤ Metformin  (other; AMPK-null or TSC2-null cells; [295])  ↺
+│   ├── ──┤ SH3BP4  (binding; amino-acid starvation; [310])
+│   ├── ──▶ SLC38A9  (binding; [288,489,642])  ↺
+│   ├── ──◇ DEPDC5  (binding; [158,555])
+│   │   └── ──┤ DEPDC5 loss-of-function  (genetic_loss_of_function; [22,141])  ↺
+│   ├── ──▶ Ragulator (LAMTOR1-5)  (scaffolding; [7,131,426,522,580,680])  ↺
+│   ├── ──■ RagA  (complex_formation; [308,554])
+│   │   ├── ──┤ GATOR1 (DEPDC5-NPRL2-NPRL3)  (gap_activity; amino-acid starvation; [28,555])
+│   │   │   ├── ──┤ GATOR2  (other; [94,657])
+│   │   │   ├── ──▶ SAMTOR  (binding; methionine/SAM deprivation; [203])  ↺
+│   │   │   ├── ──▶ SZT2  (binding; [461])  ↺
+│   │   │   ├── ──┤ DEPDC5 loss-of-function  (genetic_loss_of_function; germline heterozygous; [22,141,494])  ↺
+│   │   │   ├── ──┤ NPRL2 loss-of-function variants  (genetic_loss_of_function; germline heterozygous; [22,141,494])
+│   │   │   ├── ──┤ NPRL3 loss-of-function  (genetic_loss_of_function; germline heterozygous; [22,141,494])
+│   │   │   ├── ──┤ WDR24  (other; [618,657])
+│   │   │   ├── ──■ DEPDC5  (complex_formation; [28])  ↺
+│   │   │   ├── ──▶ KICSTOR  (recruitment; [461,656])  ↺
+│   │   │   ├── ──■ NPRL2  (complex_formation; [28])  ↺
+│   │   │   └── ──■ NPRL3  (complex_formation; [28])
+│   │   ├── ──▶ GTP  (binding; [308,554])
+│   │   ├── ──┤ NPRL2  (gap_activity; [28,158,555])
+│   │   │   └── ──┤ NPRL2 loss-of-function variants  (genetic_loss_of_function; [22,494])  ↺
+│   │   ├── ──▶ Ragulator (LAMTOR1-5)  (gef_activity; [27,556])  ↺
+│   │   ├── ──┤ RNF152  (Lys142, Lys220, Lys230, Lys244; ubiquitination; amino-acid starvation; [135])  ↺
+│   │   ├── ──┤ Sestrin2  (other; [337,460])  ↺
+│   │   ├── ──┤ SKP2  (ubiquitination; sustained amino-acid stimulation; [278])
+│   │   └── ──▶ SLC38A9  (gef_activity; [556,642])  ↺
+│   ├── ──■ RagB  (complex_formation; [308])
+│   │   ├── ──┤ GATOR1 (DEPDC5-NPRL2-NPRL3)  (gap_activity; amino-acid starvation; [28])  ↺
+│   │   └── ──▶ GTP  (binding; amino-acid sufficiency; [308,554])  ↺
+│   ├── ──■ RagC  (complex_formation; [308,554])
+│   │   ├── ──▶ FLCN-FNIP complex  (gap_activity; amino-acid resupply; [331,468,610])
+│   │   │   ├── ──┤ Rag GTPase heterodimer (RagA/B-RagC/D)  (sequestration; amino-acid starvation; [331,468,557])  ↺
+│   │   │   ├── ──┤ FLCN loss-of-function  (genetic_loss_of_function; germline; [468,534,610])  ↺
+│   │   │   ├── ──■ Folliculin (FLCN)  (complex_formation; [610])
+│   │   │   ├── ──■ FNIP1  (complex_formation; [610])  ↺
+│   │   │   ├── ──■ FNIP2  (complex_formation; [610])
+│   │   │   └── ──▶ Ragulator (LAMTOR1-5)  (recruitment; [331,468])  ↺
+│   │   ├── ──▶ GDP  (binding; [308,554])
+│   │   └── ──◇ RagA  (other; [554])  ↺
+│   ├── ──■ RagD  (complex_formation; [308,554])
+│   │   ├── ──▶ FLCN-FNIP complex  (gap_activity; [610])  ↺
+│   │   ├── ──▶ GDP  (binding; amino-acid sufficiency; [308,554,610])  ↺
+│   │   ├── ──▶ Leucyl-tRNA synthetase 1 (LARS1)  (gap_activity; mammalian cells; [51,211,338])
+│   │   │   ├── ──▶ Leucine  (binding; [211])  ↺
+│   │   │   ├── ──┤ O-GlcNAc transferase (OGT)  (Ser1042; O_GlcNAcylation; [313])
+│   │   │   └── ──◇ Glucose  (other; [313])  ↺
+│   │   └── ──▶ TFEB  (transcriptional_regulation; renal and pancreatic tumours with MiT/TFE activation; [140])  ↺
+│   ├── ──▶ TTT complex (Tel2-Tti1-Tti2)  (other; nutrient sufficiency versus metabolic stress; [311])  ↺
+│   └── ──▶ Lysosomal v-ATPase  (other; [708])  ↺
+├── ──▶ Rag GTPase heterodimer (RagA/B-RagC/D)  (recruitment; lysosomal surface; [308,503,521,522])  ↺
+├── ──┤ RapaLink-1  (drug_inhibition; including FRB-mutant, rapalog-resistant cells; [501])
+├── ──┤ Rapamycin (sirolimus)  (drug_inhibition; acute exposure; [37,166,603])
+│   ├── ──┤ ABCB1 (P-glycoprotein)  (transport; blood-brain barrier; [594])  ↺
+│   ├── ──┤ ABCB1 (P-glycoprotein)  (transport; [373])  ↺
+│   ├── ──┤ CYP3A4  (metabolic_conversion; [373])  ↺
+│   └── ──» Temsirolimus  (metabolic_conversion; [314,373])  ↺
+├── ──▶ Resistance exercise / mechanical overload  (other; skeletal muscle; resistance exercise; [149,241,683])
+├── ──▶ Rheb  (allosteric_activation; at the lysosomal surface; [364,672])
+│   ├── ──┤ BNIP3  (binding; hypoxia; [347])
+│   │   └── ──▶ HIF-1alpha  (transcriptional_regulation; hypoxia; [59])
+│   │       ├── ──┤ PHD2 (EGLN1)  (Pro402, Pro564; other; normoxia; [162,266,395])
+│   │       ├── ──┤ 4E-BP1  (translational_regulation; [44,457,572])  ↺
+│   │       ├── ──▶ eIF4F complex  (translational_regulation; [44,145,457,572])
+│   │       ├── ──▶ Hypoxia  (Pro402, Pro564; stabilisation; [266,268])  ↺
+│   │       ├── ──▶ mTORC1  (translational_regulation; normoxia and hypoxia; [145,154,328])  ↺
+│   │       ├── ──┤ pVHL (VHL)  (ubiquitination; normoxia; [399])
+│   │       ├── ──▶ Raptor  (binding; [328,437,532])  ↺
+│   │       ├── ──▶ Raptor  (binding; [328,437,532])  ↺
+│   │       └── ──■ TOS motif (TOR signalling motif)  (binding; [328,437,532])  ↺
+│   ├── ──┤ RNF152  (Lys8; ubiquitination; growth-factor withdrawal; [136])
+│   ├── ──▶ TCTP  (gef_activity; [247,491,639])
+│   ├── ──┤ TSC2 (tuberin)  (Asn1643 (TSC2 asparagine thumb); gap_activity; [261,390,600,673])
+│   │   ├── ──┤ AKT (PKB)  (Ser1130, Ser1132, Ser939, Ser981, Thr1462; phosphorylation; growth-factor stimulation; [72,260,386])  ↺
+│   │   ├── ──┤ AKT (PKB)  (Ser939, Thr1462; phosphorylation; retained without AKT Ser473; [72,260,386])  ↺
+│   │   ├── ──▶ AMPK (AMP-activated protein kinase)  (Ser1387, Thr1271; phosphorylation; energy stress / glucose deprivation; [187,207,216,226,262])  ↺
+│   │   ├── ──▶ REDD1 (DDIT4)  (other; hypoxia, energy and ER stress; [58,139,626])  ↺
+│   │   ├── ──┤ ERK1/2  (Ser540, Ser664; phosphorylation; [368])  ↺
+│   │   ├── ──▶ GSK3β  (Ser1337, Ser1341; phosphorylation; energy stress; Wnt signalling; [263])
+│   │   │   ├── ──┤ AKT (PKB)  (Ser9; phosphorylation; [121,387,388])  ↺
+│   │   │   ├── ──┤ AKT (PKB)  (Ser9; phosphorylation; retained without AKT Ser473; [387,388])  ↺
+│   │   │   ├── ──┤ AKT (PKB)  (Ser9; phosphorylation; cancer; distal-network lesions; [121,375,624])  ↺
+│   │   │   └── ──┤ Wnt ligands  (other; [263])
+│   │   ├── ──┤ HERC1  (ubiquitination; [110])
+│   │   ├── ──┤ Mechanical load  (other; skeletal muscle; [272])  ↺
+│   │   ├── ──┤ p90 RSK  (Ser1798; phosphorylation; [506])  ↺
+│   │   ├── ──┤ SGK1  (Ser939; phosphorylation; reported in PI3K-inhibitor-resistant tumour cells; [90])
+│   │   │   ├── ──▶ mTORC2  (Ser422; phosphorylation; [188,329])  ↺
+│   │   │   ├── ──▶ mSin1  (recruitment; [74,483])  ↺
+│   │   │   ├── ──▶ mSin1  (mSin1 CRIM domain; scaffolding; [74,483])  ↺
+│   │   │   ├── ──▶ Protor-1  (other; mouse kidney; [456])  ↺
+│   │   │   └── ──▶ Protor-1  (scaffolding; kidney; [455,456])  ↺
+│   │   ├── ──▶ p53  (transcriptional_regulation; DNA damage; mouse tissues and cell lines; [168,169])  ↺
+│   │   ├── ──▶ TSC1 (hamartin)  (stabilisation; [110])
+│   │   │   ├── ──┤ IKKβ  (Ser487, Ser511; phosphorylation; TNF-alpha / inflammatory signalling; [334])  ↺
+│   │   │   ├── ──┤ TSC1 loss-of-function  (genetic_loss_of_function; tuberous sclerosis; urothelial carcinoma exceptional responders; [261,600])  ↺
+│   │   │   └── ──◇ PER2 (Period 2)  (binding; mouse liver and cultured cells; [662])  ↺
+│   │   ├── ──┤ TSC2 loss-of-function  (genetic_loss_of_function; tuberous sclerosis, LAM, PEComa; [261,600])  ↺
+│   │   ├── ──┤ 14-3-3  (Ser1210, Ser939, Ser981, Thr1462; sequestration; [72,139,345,407])  ↺
+│   │   ├── ──◇ MK2  (Ser1210; phosphorylation; p38 stress signalling; [346])
+│   │   │   ├── ──▶ p38α MAPK  (Ser272, Thr222, Thr334; phosphorylation; cellular stress; [34,346])
+│   │   │   └── ──▶ mTORC1  (translational_regulation; senescent cells; [232])  ↺
+│   │   └── ──◇ PEX5 (peroxisomal import receptor)  (recruitment; peroxisome; [693])
+│   ├── ──┤ TSC complex (TSC1–TSC2–TBC1D7)  (gap_activity; lysosomal surface; [143,261,407,600,673])
+│   │   ├── ──┤ AKT (PKB)  (membrane_targeting; insulin stimulation; [72,407])  ↺
+│   │   ├── ──▶ Oxidative stress (ROS)  (other; oxidative stress; peroxisome; [693])  ↺
+│   │   ├── ──▶ TBC1D7  (stabilisation; [143,673])
+│   │   │   └── ──┤ TBC1D7 loss of function  (genetic_loss_of_function; rare recessive megalencephaly syndrome; [6,83])
+│   │   ├── ──■ TBC1D7  (complex_formation; [143,673])  ↺
+│   │   ├── ──■ TSC1 (hamartin)  (complex_formation; [143,673])  ↺
+│   │   └── ──■ TSC2 (tuberin)  (complex_formation; [143,673])  ↺
+│   ├── ──▶ TSC1 loss-of-function  (genetic_loss_of_function; germline plus somatic second hit, or somatic; [261,600])  ↺
+│   ├── ──▶ TSC2 loss-of-function  (genetic_loss_of_function; germline plus somatic second hit, or somatic; [261,600])  ↺
+│   ├── ──▶ Farnesyltransferase  (Cys181 (CAAX); membrane_targeting; [115])
+│   └── ──▶ Lysosome  (membrane_targeting; [407,521,522])  ↺
+├── ──▶ Rheb  (allosteric_activation; lysosomal surface; [364,672])  ↺
+├── ──▶ Rheb  (allosteric_activation; lysosomal surface; [672])  ↺
+├── ──┤ Ridaforolimus  (drug_inhibition; [24,37,108])
+├── ──┤ RMC-5552  (drug_inhibition; [69,339])
+├── ──┤ Sapanisertib  (drug_inhibition; [112,166,189,246,603])
+├── ──┤ SAR1B  (other; leucine deprivation; [103])
+│   └── ──┤ Leucine  (binding; [103])
+│       ├── ──▶ SLC38A9  (transport; protein- and autophagy-derived amino acids; [642,664])  ↺
+│       └── ──▶ SLC7A5 (LAT1 light chain)  (transport; [435])  ↺
+├── ──▶ SLC38A9  (other; [92,288,489,642,664])
+│   ├── ──▶ Arginine  (substrate pocket in the transmembrane bundle; sensing; lysosomal lumen; [288,340,489,642])
+│   ├── ──▶ Cholesterol (lysosomal)  (lipid_binding; [92])  ↺
+│   └── ──┤ NPC1  (binding; Niemann-Pick type C cells; [92])
+│       └── ──◇ SLC38A9  (binding; [92])  ↺
+├── ──┤ Sleep deprivation  (other; hippocampus; [611])
+├── ──┤ Temsirolimus  (drug_inhibition; [24,37,108,373])
+│   ├── ──┤ ABCB1 (P-glycoprotein)  (transport; [373])  ↺
+│   └── ──┤ CYP3A4  (metabolic_conversion; [373,564])  ↺
+├── ──┤ Torin1  (drug_inhibition; tool compound; [603])
+├── ──▶ Bmal1 loss of function (Bmal1-null)  (genetic_loss_of_function; Bmal1-/- mice; [304])
+├── ──▶ MTOR gain-of-function (somatic mosaic)  (genetic_gain_of_function; [198,361])
+├── ──▶ PER2 loss of function (Per2-null)  (genetic_loss_of_function; [662])
+├── ──▶ STK11 (LKB1) loss-of-function  (other; STK11-mutant tumours; Peutz-Jeghers syndrome; [138,375,546,624])
+├── ──▶ STRADA biallelic loss of function  (other; PMSE syndrome; cortical neurons; [450,480])
+├── ──▶ TSC1 loss-of-function  (genetic_loss_of_function; [355])
+├── ──┤ Vistusertib  (drug_inhibition; [112,166,473])
+├── ──◇ Ageing  (physiological_output; aged skeletal muscle; [67,125])
+├── ──■ PRAS40  (complex_formation; [503,520,620,637])  ↺
+├── ──◇ Circadian clock (transcription–translation feedback loop)  (other; liver and peripheral tissues; [612,662])
+│   ├── ──◇ Caloric restriction  (other; liver; [128,452])  ↺
+│   ├── ──◇ Rapamycin (sirolimus)  (drug_inhibition; cultured cells and mice; [484])  ↺
+│   └── ──◇ TFEB  (transcriptional_regulation; mouse liver; [451])
+│       ├── ──┤ ERK1/2  (Ser142; phosphorylation; nutrient-replete conditions; [543,681])  ↺
+│       ├── ──┤ FLCN-FNIP complex  (other; Birt-Hogg-Dube kidney; [429,610])  ↺
+│       ├── ──┤ mTORC1  (Ser142; phosphorylation; nutrient sufficiency; [544])  ↺
+│       ├── ──┤ mTORC1  (Ser211; phosphorylation; nutrient sufficiency; [392,498,544])  ↺
+│       ├── ──┤ mTORC1  (Ser122; phosphorylation; [627])  ↺
+│       ├── ──▶ calcineurin  (Ser142, Ser211; dephosphorylation; starvation / lysosomal stress; [406])
+│       │   ├── ──▶ Ca2+ (cytosolic calcium)  (allosteric_activation; [406])  ↺
+│       │   ├── ──┤ Cyclosporine A  (drug_inhibition; transplant immunosuppression; [356,563])
+│       │   ├── ──┤ Cyclophilin A (PPIA)  (binding; [356])
+│       │   └── ──┤ Tacrolimus (FK506)  (drug_inhibition; transplant immunosuppression; [356,563])  ↺
+│       ├── ──▶ FLCN loss-of-function  (Ser211; other; FLCN-null renal epithelium; [429,534,610])
+│       ├── ──┤ 14-3-3  (Ser211; binding; [392,498])  ↺
+│       ├── ──◇ Circadian clock (transcription–translation feedback loop)  (other; liver; [451])  ↺
+│       ├── ──▶ Rag GTPase heterodimer (RagA/B-RagC/D)  (recruitment; amino-acid replete cells; [393])  ↺
+│       ├── ──▶ Rag GTPase heterodimer (RagA/B-RagC/D)  (recruitment; amino-acid sufficiency; [393])  ↺
+│       └── ──▶ RagC  (Ser211; other; [393,429])  ↺
+├── ──■ DEPTOR  (complex_formation; [466,503])  ↺
+├── ──▶ Lysosome  (scaffolding; [23,462,545,708])
+│   ├── ──▶ Autophagic lysosome reformation  (other; [686])
+│   │   └── ──▶ mTORC1  (physiological_output; late phase of a completed autophagic cycle; [686])  ↺
+│   ├── ──▶ KICSTOR  (membrane_targeting; [656])
+│   │   ├── ──┤ SZT2 loss-of-function (biallelic)  (genetic_loss_of_function; human germline; [31,461,656])
+│   │   ├── ──┤ SZT2 loss-of-function (biallelic)  (genetic_loss_of_function; biallelic germline; [31,461,656])  ↺
+│   │   ├── ──■ C12orf66  (complex_formation; [461,656])
+│   │   ├── ──■ ITFG2  (complex_formation; [461,656])
+│   │   ├── ──■ KPTN (kaptin)  (complex_formation; [461,656])
+│   │   ├── ──◇ SAMTOR  (binding; [203])
+│   │   │   └── ──┤ S-adenosylmethionine  (binding; [203])
+│   │   └── ──■ SZT2  (complex_formation; [461,656])
+│   ├── ──▶ LAMTOR1 (p18)  (Cys3/Cys4 (palmitoylation), Gly2 (myristoylation); membrane_targeting; [428,522])
+│   ├── ──■ TRPML1  (complex_formation; [406])
+│   │   ├── ──▶ Lysosomal stress  (other; lysosomal damage or stress; [406,697])
+│   │   └── ──▶ TFEB  (transcriptional_regulation; [406])  ↺
+│   └── ──▶ mTORC1  (physiological_output; prolonged starvation; [686])  ↺
+├── ──■ mLST8 (GbetaL)  (complex_formation; [306,503])
+├── ──■ mTOR  (complex_formation; [14,305,362,503,672])
+│   ├── ──┤ Apitolisib  (competitive_inhibition; [584])
+│   ├── ──┤ AZD8055  (competitive_inhibition; [112])
+│   ├── ──┤ Dactolisib  (competitive_inhibition; [380])
+│   ├── ──┤ DEPTOR  (binding; [466])  ↺
+│   ├── ──┤ FKBP12-rapamycin complex  (sequestration; prolonged exposure; [527])  ↺
+│   ├── ──▶ Hsp90  (stabilisation; [592])
+│   │   └── ──◇ Cdc37  (binding; [502])
+│   ├── ──┤ KU-0063794  (competitive_inhibition; tool compound; [189])
+│   ├── ──┤ mSin1  (mSin1 PH domain; autoinhibition; basal, growth-factor-deprived state; [360])
+│   │   ├── ──▶ AKT (PKB)  (Thr86; phosphorylation; [252,359,671])  ↺
+│   │   ├── ──▶ PI(3,4,5)P3  (lipid_binding; growth-factor stimulation; [360])  ↺
+│   │   ├── ──▶ PI(3,4,5)P3  (lipid_binding; [360])  ↺
+│   │   ├── ──▶ PI(3,4,5)P3  (mSin1 PH domain; lipid_binding; growth-factor stimulation; [360])  ↺
+│   │   ├── ──┤ S6K1 (p70 S6 kinase 1)  (Thr398, Thr86; phosphorylation; [359])  ↺
+│   │   ├── ──┤ S6K1 (p70 S6 kinase 1)  (Thr398, Thr86; phosphorylation; reported in tumour cell lines; [359])  ↺
+│   │   ├── ──■ mSin1 CRIM domain  (binding; [74,483])  ↺
+│   │   ├── ──■ mSin1 PH domain  (binding; [360])
+│   │   │   └── ──▶ PI(3,4,5)P3  (lipid_binding; [360])  ↺
+│   │   ├── ──◇ Ras (K/H/N-Ras)  (binding; shown chiefly with oncogenic KRAS/HRAS in cultured cells; [91,318,537])
+│   │   │   ├── ──┤ Neurofibromin (NF1)  (gap_activity; [391])
+│   │   │   ├── ──▶ SOS1 (Son of sevenless 1)  (gef_activity; [66,96])
+│   │   │   └── ──▶ NF1 loss-of-function  (genetic_loss_of_function; somatic or germline; [368,375,506,624])
+│   │   ├── ──◇ Ras (K/H/N-Ras)  (binding; [91,318,537])  ↺
+│   │   └── ──■ mSin1 Ras-binding domain  (binding; [91,537])
+│   ├── ──▶ mLST8 (GbetaL)  (binding; [306,503,531])  ↺
+│   ├── ──┤ OSI-027  (competitive_inhibition; [42])
+│   ├── ──┤ PP242  (competitive_inhibition; tool compound; [166])
+│   ├── ──┤ RapaLink-1  (competitive_inhibition; [501])  ↺
+│   ├── ──▶ Rheb  (binding; lysosomal surface; [364,672])  ↺
+│   ├── ──┤ RTB101  (competitive_inhibition; [291,385])
+│   ├── ──┤ Torin2  (competitive_inhibition; [166,358,603])
+│   ├── ──▶ TTT complex (Tel2-Tti1-Tti2)  (stabilisation; [294,591])  ↺
+│   ├── ──▶ MTOR E1799K  (E1799K; genetic_gain_of_function; germline; [198])
+│   ├── ──▶ MTOR FAT-domain hotspot variants  (A1459P, C1483Y, E1799K; genetic_gain_of_function; cancer-associated variants; biochemical and cell models; [201])
+│   ├── ──▶ MTOR gain-of-function (somatic mosaic)  (genetic_gain_of_function; somatic mosaicism in brain; [256,336,415])  ↺
+│   ├── ──▶ MTOR kinase-domain hotspot variants  (E2419K, S2215Y; genetic_gain_of_function; somatic, renal cell and urothelial carcinoma; [201,632])
+│   ├── ──┤ Vistusertib  (competitive_inhibition; [112,166,473])  ↺
+│   ├── ──◇ AKT (PKB)  (Ser2448; phosphorylation; [106,430,540])  ↺
+│   ├── ──■ mTOR kinase ATP cleft  (other; [315,588,670])
+│   │   ├── ──┤ RapaLink-1  (competitive_inhibition; [501])  ↺
+│   │   └── ──┤ RMC-5552  (competitive_inhibition; [69,339])  ↺
+│   ├── ──◇ ETV7  (binding; ETV7-expressing tumour cells; [225])
+│   ├── ──■ mTOR FATC domain  (binding; [315,588,670])
+│   ├── ──■ mTOR FAT domain  (binding; [315,588,670])
+│   │   └── ──▶ Rheb  (allosteric_activation; [672])  ↺
+│   ├── ──■ FRB domain of mTOR  (binding; [98,315,588,670])
+│   │   ├── ──┤ FKBP12-rapamycin complex  (binding; [24,56,107,108,514,515])  ↺
+│   │   ├── ──┤ FKBP12-rapamycin complex  (binding; [24,56,107,108,514,515])  ↺
+│   │   ├── ──┤ FKBP12-rapamycin complex  (binding; [24,108])  ↺
+│   │   ├── ──┤ mSin1  (binding; [102,531])  ↺
+│   │   ├── ──┤ RapaLink-1  (binding; [501])  ↺
+│   │   ├── ──┤ Rictor  (sequestration; [102,531])  ↺
+│   │   ├── ──┤ Rictor  (binding; [102,531])  ↺
+│   │   ├── ──┤ Rictor  (sequestration; assembled mTORC2; [102,531])  ↺
+│   │   ├── ──┤ RMC-5552  (binding; [69,339])  ↺
+│   │   └── ──┤ mTOR FRB resistance mutation  (Ser2035; genetic_loss_of_function; acquired and engineered rapamycin resistance; [98,365,501])
+│   │       └── ──┤ RapaLink-1  (other; FRB-domain and kinase-domain mTOR resistance mutants; [501])  ↺
+│   ├── ──■ FRB domain of mTOR  (other; [315,588,670])  ↺
+│   ├── ──■ mTOR N-HEAT/M-HEAT solenoid  (binding; [14,588,670])
+│   ├── ──■ mTOR kinase domain (PIKK)  (binding; [315,588,670])
+│   │   ├── ──┤ mTOR FAT domain  (autoinhibition; basal state; [201,670,672])  ↺
+│   │   ├── ──┤ mSin1 PH domain  (autoinhibition; [360])  ↺
+│   │   ├── ──▶ mTOR FATC domain  (binding; [315,588,590,670])  ↺
+│   │   ├── ──◇ FRB domain of mTOR  (binding; [588,670])  ↺
+│   │   └── ──◇ mLST8 (GbetaL)  (binding; [14,306,531,670])  ↺
+│   ├── ──▶ mLST8 (GbetaL)  (binding; [204,306])  ↺
+│   ├── ──▶ mTOR  (complex_formation; [14,531,589,663,672])  ↺
+│   ├── ──◇ mTOR  (Ser2481; phosphorylation; [465,571])  ↺
+│   ├── ──◇ mTORC2  (Ser2481; phosphorylation; [571])  ↺
+│   ├── ──▶ Rictor  (scaffolding; [102,525,531,597,670])
+│   │   ├── ──┤ GSK3β  (Ser1235; phosphorylation; ER stress; [100])  ↺
+│   │   ├── ──┤ S6K1 (p70 S6 kinase 1)  (Thr1135; phosphorylation; [53,142,285,607])  ↺
+│   │   ├── ──┤ S6K1 (p70 S6 kinase 1)  (Thr1135; phosphorylation; [53,142,285,607])  ↺
+│   │   ├── ──┤ S6K1 (p70 S6 kinase 1)  (Thr1135; phosphorylation; [53,142,285,607])  ↺
+│   │   ├── ──▶ mSin1  (mSin1 N-terminal Rictor-binding segment; binding; [74,102,270,360,483,531])  ↺
+│   │   ├── ──◇ Protor-1  (binding; [455])  ↺
+│   │   ├── ──◇ Protor-2  (binding; [455,601])  ↺
+│   │   └── ──◇ 14-3-3  (Thr1135; binding; [142,607])  ↺
+│   ├── ──◇ S6K1 (p70 S6 kinase 1)  (Ser2448; phosphorylation; [106,237])  ↺
+│   └── ──▶ Raptor  (scaffolding; [14,305,362,670])  ↺
+├── ──▶ Ragulator (LAMTOR1-5)  (scaffolding; [7,131,503,580])
+│   ├── ──▶ Lysosomal v-ATPase  (allosteric_activation; [27,708])  ↺
+│   ├── ──■ LAMTOR1 (p18)  (complex_formation; [27,426,522,680])  ↺
+│   ├── ──■ LAMTOR2 (p14)  (complex_formation; [426,522,680])
+│   ├── ──■ LAMTOR3 (MP1)  (complex_formation; [426,522,680])
+│   ├── ──■ LAMTOR4 (C7orf59)  (complex_formation; [426,522,680])
+│   ├── ──■ LAMTOR5 (HBXIP)  (complex_formation; [426,522,680])
+│   └── ──◇ SLC38A9  (binding; [288,489])  ↺
+├── ──■ Raptor  (complex_formation; [14,305,362,503])
+│   ├── ──┤ PRAS40  (competitive_inhibition; [520,532,620,637])  ↺
+│   ├── ──┤ AMPK (AMP-activated protein kinase)  (Ser722, Ser792; phosphorylation; energy stress; [187,207,216,226,262])  ↺
+│   ├── ──┤ AMPK (AMP-activated protein kinase)  (Ser722, Ser792; phosphorylation; energy stress; [187,207,216,226,262])  ↺
+│   ├── ──▶ ERK1/2  (Ser696, Ser8, Ser863; phosphorylation; [86,174])  ↺
+│   ├── ──┤ hexokinase 2  (binding; glucose deprivation; cardiomyocytes, cancer cells; [496])
+│   │   └── ──▶ HIF-1alpha  (transcriptional_regulation; [154,397])  ↺
+│   ├── ──▶ mTOR  (Ser863; phosphorylation; insulin stimulation; [174,640])  ↺
+│   ├── ──▶ Rag GTPase heterodimer (RagA/B-RagC/D)  (binding; [7,308,521])  ↺
+│   ├── ──┤ Rictor  (competitive_inhibition; [102,525,531])  ↺
+│   ├── ──▶ p90 RSK  (Ser719, Ser721, Ser722; phosphorylation; [87])  ↺
+│   ├── ──▶ p90 RSK  (Ser719, Ser721, Ser722; phosphorylation; [87])  ↺
+│   ├── ──┤ ULK1  (Ser792, Ser855, Ser859; phosphorylation; autophagy-inducing conditions; [152,287])  ↺
+│   ├── ──┤ 14-3-3  (Ser722, Ser792; binding; energy stress; [207])  ↺
+│   ├── ──◇ PER2 (Period 2)  (binding; [662])  ↺
+│   ├── ──▶ Rag GTPase heterodimer (RagA/B-RagC/D)  (binding; amino-acid sufficiency; [308,521,554])  ↺
+│   ├── ──▶ RAIP motif  (binding; [70,109])
+│   └── ──▶ TOS motif (TOR signalling motif)  (binding; [437,532])  ↺
+├── ──▶ RUVBL1 (Pontin)  (scaffolding; energy-replete vs energy-stressed cells; [311])
+└── ──▶ TTT complex (Tel2-Tti1-Tti2)  (scaffolding; [294,592])
+    ├── ──▶ RUVBL1 (Pontin)  (binding; [239,311])  ↺
+    ├── ──▶ RUVBL2 (Reptin)  (binding; [239,311])
+    ├── ──■ Tel2  (complex_formation; [294,592])
+    ├── ──■ Tti1  (complex_formation; [254,294])
+    │   └── ──▶ Tel2  (binding; [254,294])  ↺
+    └── ──■ Tti2  (complex_formation; [592])
